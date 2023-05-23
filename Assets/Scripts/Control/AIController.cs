@@ -4,6 +4,7 @@ using UnityEngine;
 using RPG.Combat;
 using RPG.Core;
 using RPG.Movement;
+using System;
 
 namespace  RPG.Control
 {
@@ -11,12 +12,17 @@ namespace  RPG.Control
     {
         [SerializeField] float chaseDistance = 5f;
         [SerializeField] float suspicionTime = 3f;
+        [SerializeField] PatrolPath patrolPath;
+        [SerializeField] float waypointTolerance = 0.5f;
+        [SerializeField] float timeWaitForNextWayPoint = 3f;
+        int currentWayPointIndex = 0;
         Health health;
         Fighter fighter;
         Mover mover;
         GameObject player;
         Vector3 guardPosition;
         float timeSinceLastSawPlayer = Mathf.Infinity;
+        float timeSinceArriveAtWayPoint= Mathf.Infinity;
 
         private void Start() {
             health = GetComponent<Health>();
@@ -40,14 +46,46 @@ namespace  RPG.Control
             }
             else
             {
-                GuardBehaviour();
+                PatrolBehaviour();
+
             }
             timeSinceLastSawPlayer +=Time.deltaTime;
+            timeSinceArriveAtWayPoint  +=Time.deltaTime;
         }
 
-        private void GuardBehaviour()
+        private void PatrolBehaviour()
         {
-            mover.StartMoveAction(guardPosition);
+            Vector3 nextPostion = guardPosition;
+            if (patrolPath != null)
+            {
+                if(AtWayPoint())
+                {
+                    //Get Next Waypoint Position from PatrolPath
+                    timeSinceArriveAtWayPoint = 0;
+                    CycleWayPoint();
+                }
+                nextPostion = GetCurrentWayPoint();
+            }
+            if (timeSinceArriveAtWayPoint >  timeWaitForNextWayPoint)
+            {
+                mover.StartMoveAction(nextPostion);
+            }
+        }
+
+        private Vector3 GetCurrentWayPoint()
+        {
+            return patrolPath.GetWaypointAtIndex(currentWayPointIndex);
+        }
+
+        private void CycleWayPoint()
+        {
+            currentWayPointIndex = patrolPath.GetNextWaypointIndex(currentWayPointIndex);
+        }
+
+        private bool AtWayPoint()
+        {
+            float distanceToWayPoint = Vector3.Distance(transform.position, GetCurrentWayPoint());
+            return (distanceToWayPoint < waypointTolerance);
         }
 
         private void SuspicionBehaviour()
