@@ -28,6 +28,11 @@ namespace RPG.Movement
             navMeshAgent.isStopped = true;
         }
 
+        public void SetSpeed(float speed)
+        {
+            navMeshAgent.speed = speed;
+        }
+
         public void StartMoveAction(Vector3 destination)
         {
             GetComponent<ActionScheduler>().StartAction(this);

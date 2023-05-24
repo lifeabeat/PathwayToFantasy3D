@@ -38,6 +38,7 @@ namespace  RPG.Control
             {
                 timeSinceLastSawPlayer = 0;
                 AttackBehaviour();
+                mover.SetSpeed(4.5f);
             }
             else if(timeSinceLastSawPlayer < suspicionTime)
             {
@@ -47,6 +48,7 @@ namespace  RPG.Control
             else
             {
                 PatrolBehaviour();
+                mover.SetSpeed(2.5f);
 
             }
             timeSinceLastSawPlayer +=Time.deltaTime;
