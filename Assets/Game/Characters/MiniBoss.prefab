@@ -63,6 +63,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2216998467681255211, guid: c6df3991356f31a48919e2380b563c38, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8339143494969490195, guid: c6df3991356f31a48919e2380b563c38, type: 3}
       propertyPath: weaponPrefab
       value: 
@@ -105,10 +109,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.29193252
+  m_Radius: 0.33864594
   m_Height: 1.8585963
   m_Direction: 1
-  m_Center: {x: -0.01896298, y: 0.95472145, z: -0.00618881}
+  m_Center: {x: -0.0039253235, y: 0.95472145, z: -0.00618881}
 --- !u!114 &676458115
 MonoBehaviour:
   m_ObjectHideFlags: 0

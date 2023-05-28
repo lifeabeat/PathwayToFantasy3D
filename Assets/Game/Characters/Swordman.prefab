@@ -74,6 +74,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 374391564, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
+      propertyPath: m_Radius
+      value: 0.35579398
+      objectReference: {fileID: 0}
+    - target: {fileID: 374391564, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
+      propertyPath: m_Center.x
+      value: 0.0008139009
+      objectReference: {fileID: 0}
+    - target: {fileID: 374391564, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
+      propertyPath: m_Center.z
+      value: -0.10819137
+      objectReference: {fileID: 0}
     - target: {fileID: 4059725602427407385, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
       propertyPath: leftHandTransform
       value: 

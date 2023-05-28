@@ -25,9 +25,14 @@ namespace RPG.Combat
                     GameObject weapon = Instantiate(equippedPrefab, handTransform);
                     weapon.name = weaponName;
                 }
+                // Nesting To Fix error not override in case forgot to add/ misaken animator override / Logic error
+                var overrideController = animator.runtimeAnimatorController as AnimatorOverrideController;
                 if (animatorOverride != null)
                {
                     animator.runtimeAnimatorController = animatorOverride;
+               } else if (overrideController != null)
+               {
+                    animator.runtimeAnimatorController = overrideController.runtimeAnimatorController;
                }
             }
 
@@ -39,6 +44,7 @@ namespace RPG.Combat
                 oldWeapon = leftHandTransform.Find(weaponName);
             } 
             if(oldWeapon == null) return;
+            //Change name to fix error confusew which is old/new weapon to delete
             oldWeapon.name = "Destroying";
             Destroy(oldWeapon.gameObject);
         }
