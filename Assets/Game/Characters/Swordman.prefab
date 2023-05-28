@@ -82,6 +82,10 @@ PrefabInstance:
       propertyPath: rightHandTransform
       value: 
       objectReference: {fileID: 2059924587140168206}
+    - target: {fileID: 4059725602427407385, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
+      propertyPath: timeBetweenAttaack
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4807665955799789171, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
       propertyPath: uniqueIdentifier
       value: 743dfc75-6257-4132-bb0f-5c904dffdd69

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c284003f66585549a7cb17fb8bea01e, type: 3}
-  m_Name: BowForEnemy
+  m_Name: BowHoming
   m_EditorClassIdentifier: 
   equippedPrefab: {fileID: 8854915943773105063, guid: 7bb3a596efb0f434bb66f43a33240ba0, type: 3}
   animatorOverride: {fileID: 22100000, guid: ec073a11587efa5468ffa8485685db22, type: 2}
   weaponRange: 10
-  weaponDamage: 8
+  weaponDamage: 6
   isRightHanded: 0
   projectiles: {fileID: 6796718873320618725, guid: c3117d37e1230ca40920609bb6b58faa, type: 3}

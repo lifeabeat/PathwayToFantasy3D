@@ -1599,7 +1599,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 376641751}
-  m_LocalRotation: {x: 0.30315635, y: 0.13410431, z: -0.043136142, w: 0.942471}
+  m_LocalRotation: {x: 0.30315632, y: 0.13410431, z: -0.04313615, w: 0.94247097}
   m_LocalPosition: {x: -5.5641937, y: 12.770087, z: -8.141037}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3075,7 +3075,7 @@ PrefabInstance:
       objectReference: {fileID: 317355270}
     - target: {fileID: 6406050804464002029, guid: f444e18975444fa4cb179b209d3cdf39, type: 3}
       propertyPath: chaseDistance
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f444e18975444fa4cb179b209d3cdf39, type: 3}
@@ -3245,6 +3245,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1542936774}
     m_Modifications:
+    - target: {fileID: 5322910503649249711, guid: 3eb64ea0059be6a4197633e83e1a39b7, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6539601099278146794, guid: 3eb64ea0059be6a4197633e83e1a39b7, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3931,10 +3935,6 @@ PrefabInstance:
       propertyPath: patrolPath
       value: 
       objectReference: {fileID: 542934041}
-    - target: {fileID: 6406050804464002029, guid: f444e18975444fa4cb179b209d3cdf39, type: 3}
-      propertyPath: chaseDistance
-      value: 8
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f444e18975444fa4cb179b209d3cdf39, type: 3}
 --- !u!1001 &843687256
@@ -4388,13 +4388,17 @@ PrefabInstance:
       propertyPath: uniqueIdentifier
       value: 5f884325-2b08-435c-9a41-be7336d43075
       objectReference: {fileID: 0}
+    - target: {fileID: 6073551514739720576, guid: f444e18975444fa4cb179b209d3cdf39, type: 3}
+      propertyPath: defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 46fc160b9d21ee445826bf2955f90dad, type: 2}
     - target: {fileID: 6406050804464002029, guid: f444e18975444fa4cb179b209d3cdf39, type: 3}
       propertyPath: patrolPath
       value: 
       objectReference: {fileID: 1538550962}
     - target: {fileID: 6406050804464002029, guid: f444e18975444fa4cb179b209d3cdf39, type: 3}
       propertyPath: chaseDistance
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f444e18975444fa4cb179b209d3cdf39, type: 3}
@@ -11143,6 +11147,10 @@ PrefabInstance:
     - target: {fileID: 4822856572062013671, guid: 3880827549df32b4686fa48db78502ce, type: 3}
       propertyPath: m_Name
       value: WeakEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5904685392164408742, guid: 3880827549df32b4686fa48db78502ce, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3880827549df32b4686fa48db78502ce, type: 3}

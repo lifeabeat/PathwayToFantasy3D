@@ -8,6 +8,7 @@ namespace RPG.Combat
     public class Projectiles : MonoBehaviour
     {
         [SerializeField] float speed = 3f;
+        [SerializeField] bool isHoming;
          Health target = null;
          float damage = 0;
 
@@ -16,11 +17,15 @@ namespace RPG.Combat
         // Update is called once per frame
         private void Start() {
             GenerateRandomTargetOffset();
+            transform.LookAt(GetAimTarget());
         }
         void Update()
         {
              if(target == null) return;
-             transform.LookAt(GetAimTarget());
+             if (isHoming && !target.IsDead())
+             {
+                transform.LookAt(GetAimTarget());
+             }
              transform.Translate(Vector3.forward * speed * Time.deltaTime);
         }
 
@@ -36,6 +41,7 @@ namespace RPG.Combat
 
         private void OnTriggerEnter(Collider other) {
             if (other.GetComponent<Health>() != target) return; 
+            if(target.IsDead()) return;
                 target.TakeDamage(damage);
                 Destroy(this.gameObject);
         }
