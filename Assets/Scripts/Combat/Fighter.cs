@@ -3,18 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using RPG.Movement;
 using RPG.Core;
+using System;
 
 namespace RPG.Combat
 {
     public class Fighter : MonoBehaviour, IAction
     {
-        [SerializeField] float weaponRange = 2f;
+        
         [SerializeField] float  timeBetweenAttaack = 1.2f;
-        [SerializeField] float weaponDamage = 5;
+        
+        [SerializeField] Transform rightHandTransform = null;
+        [SerializeField] Transform leftHandTransform = null;
+        [SerializeField] Weapon defaultWeapon = null;
+      
     
         Health target;
         // End Atk Longtime ago, If let 0 it first need to run one time
         float timeSinceLastAttack = Mathf.Infinity; 
+        Weapon currentWeapon = null;
+
+        private void Start() 
+        {
+            if(defaultWeapon != null)
+            {
+                EquipWeapon(defaultWeapon);
+            }
+        }
 
         private void Update()
         {
@@ -33,6 +47,7 @@ namespace RPG.Combat
                 GetComponent<Mover>().Cancel();
                 AttackBehaviour();
             }
+            
 
         }
 
@@ -57,12 +72,25 @@ namespace RPG.Combat
         void Hit()
         {
             if (target == null) return;
-            target.TakeDamage(weaponDamage);
+            if (currentWeapon.HasProjectiles())
+            {
+                currentWeapon.LaunchProjectiels(rightHandTransform,leftHandTransform,target);
+            }
+            else 
+            {
+                target.TakeDamage(currentWeapon.WeaponDamage());
+            }
+           
+        }
+
+        void Shoot()
+        {
+            Hit();
         }
 
         private bool GetIsInRange()
         {
-            return (Vector3.Distance(transform.position, target.transform.position) < weaponRange);
+            return (Vector3.Distance(transform.position, target.transform.position) < currentWeapon.WeaponRange());
         }
 
         public bool CanAttack(GameObject combatTarget)
@@ -92,6 +120,12 @@ namespace RPG.Combat
             GetComponent<Animator>().ResetTrigger("isAttack");
         }
 
+        public void EquipWeapon(Weapon weapon)
+        {
+            currentWeapon = weapon;
+            Animator animator = GetComponent<Animator>();
+            weapon.Spawn(rightHandTransform, leftHandTransform, animator);
+        }
+       
     }
-    
-}
+ }
