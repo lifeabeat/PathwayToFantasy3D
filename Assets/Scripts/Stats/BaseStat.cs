@@ -12,18 +12,35 @@ namespace RPG.Stats
         [SerializeField] CharacterClass characterClass;
         [SerializeField] Progression progression = null;
         [SerializeField] GameObject levelUpEffect = null;
+
+        [SerializeField] bool shouldUseModifier = false;
     
         
         public event Action onLevelUp;
 
         int currentLevel = 0;
+        Experience experience;
+
+        private void Awake() {
+            
+            experience = GetComponent<Experience>();    
+        }
         private void Start() 
         {    
             currentLevel = CalculateLevel();
-            Experience experience = GetComponent<Experience>();
-            if ( experience != null)
+        }
+
+        private void OnEnable() {
+            if (experience != null)
             {
                 experience.onExperienceGained += UpdateLevel;
+            }
+        }
+
+        private void OnDisable() {
+            if (experience != null)
+            {
+                experience.onExperienceGained -= UpdateLevel;
             }
         }
         private void UpdateLevel() 
@@ -44,9 +61,14 @@ namespace RPG.Stats
 
         public float GetStat(Stat stat)
         {
-            return progression.GetStat(stat, characterClass, GetLevel()) + GetAddictiveModifier(stat);
+            return (GetBaseStat(stat) + GetAddictiveModifier(stat)) * (1 + GetPercentageModifier(stat)/100);
         }
 
+        
+        private float GetBaseStat(Stat   stat)
+        {
+            return progression.GetStat(stat, characterClass, GetLevel());
+        }
 
         public int GetLevel()
         {
@@ -59,8 +81,32 @@ namespace RPG.Stats
 
         private float GetAddictiveModifier(Stat stat)
         {
-            throw new NotImplementedException();
+            if (!shouldUseModifier) return 0;
+            float total = 0;
+            foreach (IModiferProvider provider in GetComponents<IModiferProvider>())
+            {
+                foreach ( float modifier in provider.GetAdditiveModifier(stat))
+                {
+                    total += modifier;
+                }
+            }
+            return total;
         }
+
+        private float GetPercentageModifier(Stat stat)
+        {
+            if (!shouldUseModifier) return 0;
+            float total = 0;
+            foreach (IModiferProvider provider in GetComponents<IModiferProvider>())
+            {
+                foreach (float modifier in provider.GetPercentageModifer(stat))
+                {
+                    total += modifier;
+                }
+            }
+            return total;
+        }
+
 
         private int CalculateLevel()
         {

@@ -11,20 +11,23 @@ namespace RPG.Attributes
     public class Health : MonoBehaviour, ISaveable
     {
         [SerializeField] float regeneratePercentage = 90;
-        float health = -1;
+         float health = -1;
 
         bool isDead = false;
 
        private void Start() 
        {
-            GetComponent<BaseStat>().onLevelUp += RegenerateHealth;
-            // Iff health < 0 then the Restore State havent run
+            // If health < 0 then the Restore State havent run
             if(health < 0 )
             {
                 health = GetComponent<BaseStat>().GetStat(Stat.Health);
             }
-
-
+       }
+       private void OnEnable() {
+            GetComponent<BaseStat>().onLevelUp += RegenerateHealth;
+       }
+       private void OnDisable() {
+            GetComponent<BaseStat>().onLevelUp -= RegenerateHealth;
        }
 
         
