@@ -4,7 +4,8 @@ using UnityEngine;
 using RPG.Movement;
 using RPG.Core;
 using RPG.Saving;
-using System;
+using RPG.Stats;
+using RPG.Attributes;
 
 namespace RPG.Combat
 {
@@ -73,13 +74,16 @@ namespace RPG.Combat
         void Hit()
         {
             if (target == null) return;
+            float damage = GetComponent<BaseStat>().GetStat(Stat.Damage);
             if (currentWeapon.HasProjectiles())
             {
-                currentWeapon.LaunchProjectiels(rightHandTransform,leftHandTransform,target);
+                currentWeapon.LaunchProjectiels(rightHandTransform,leftHandTransform,target, gameObject, damage);
             }
             else 
             {
-                target.TakeDamage(currentWeapon.WeaponDamage());
+                // target.TakeDamage(gameObject, currentWeapon.WeaponDamage());
+               
+                target.TakeDamage(gameObject, damage);
             }
            
         }
@@ -129,6 +133,10 @@ namespace RPG.Combat
             weapon.Spawn(rightHandTransform, leftHandTransform, animator);
         }
 
+        public Health GetTarget()
+        {
+            return target;
+        }
 
         // Save weaponName in Current scene
         public object CaptureState()

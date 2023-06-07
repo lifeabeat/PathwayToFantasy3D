@@ -318,6 +318,18 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2942240233546285900, guid: c6df3991356f31a48919e2380b563c38, type: 3}
+      propertyPath: progression
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b56279bf7548214b8c0317eaad74200, type: 2}
+    - target: {fileID: 2942240233546285900, guid: c6df3991356f31a48919e2380b563c38, type: 3}
+      propertyPath: levelUpEffect
+      value: 
+      objectReference: {fileID: 2879401967678472745, guid: da80b0d8dab374447a6669c162a1b932, type: 3}
+    - target: {fileID: 2942240233546285900, guid: c6df3991356f31a48919e2380b563c38, type: 3}
+      propertyPath: startingLevel
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8339143494969490195, guid: c6df3991356f31a48919e2380b563c38, type: 3}
       propertyPath: weapon
       value: 
@@ -405,6 +417,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1b5be031a42f0144883d6ef5c91e13e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9193515550971389566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4818316858494212297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0a4194be406c4685984695d6a6b6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  experiencePoints: 0
 --- !u!4 &4818316858494212301 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 998618481093388910, guid: c6df3991356f31a48919e2380b563c38, type: 3}

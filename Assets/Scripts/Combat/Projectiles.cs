@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using RPG.Core;
+using RPG.Attributes;
 
 namespace RPG.Combat
 {
@@ -14,6 +15,7 @@ namespace RPG.Combat
         [SerializeField] GameObject hitEffect = null;
         [SerializeField] GameObject[] destroyOnHit = null;
          Health target = null;
+         GameObject instigator = null;
          float damage = 0;
 
         Vector3 targetOffset;
@@ -43,10 +45,11 @@ namespace RPG.Combat
             return target.transform.position + targetOffset;
         }
 
-        public void SetTarget(Health target, float damage)
+        public void SetTarget(Health target,GameObject instigator, float damage)
         {
             this.target = target;
             this.damage = damage;
+            this.instigator = instigator;
             Destroy(gameObject, maxLifeTime);
         }
         private void GenerateRandomTargetOffset()
@@ -62,7 +65,7 @@ namespace RPG.Combat
         {
             if (other.GetComponent<Health>() != target) return;
             if (target.IsDead()) return;
-            target.TakeDamage(damage);
+            target.TakeDamage(instigator, damage);
             //Slowly dissapeear
             speed = 0;
             if(hitEffect !=null)
