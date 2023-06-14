@@ -22,7 +22,8 @@ namespace RPG.Combat
 
         // Update is called once per frame
         private void Start() {
-            GenerateRandomTargetOffset();
+            // Use this if want Projectiles target position of Colider randomly. 
+            //GenerateRandomTargetOffset();
             transform.LookAt(GetAimTarget());
         }
         void Update()
