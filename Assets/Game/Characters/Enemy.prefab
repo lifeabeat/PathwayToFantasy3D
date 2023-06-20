@@ -1,5 +1,75 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2900429485113432135
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5059321433514237284}
+    m_Modifications:
+    - target: {fileID: 2370683461544788971, guid: a506d871626fa7f4ca2ce335201e20bf, type: 3}
+      propertyPath: rootCanvas
+      value: 
+      objectReference: {fileID: 7139885774588134133}
+    - target: {fileID: 2370683461544788971, guid: a506d871626fa7f4ca2ce335201e20bf, type: 3}
+      propertyPath: healthComponent
+      value: 
+      objectReference: {fileID: 5059321433421912967}
+    - target: {fileID: 3878857488629916527, guid: a506d871626fa7f4ca2ce335201e20bf, type: 3}
+      propertyPath: m_Name
+      value: HealthBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4955071527913896934, guid: a506d871626fa7f4ca2ce335201e20bf, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4955071527913896934, guid: a506d871626fa7f4ca2ce335201e20bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4955071527913896934, guid: a506d871626fa7f4ca2ce335201e20bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4955071527913896934, guid: a506d871626fa7f4ca2ce335201e20bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4955071527913896934, guid: a506d871626fa7f4ca2ce335201e20bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4955071527913896934, guid: a506d871626fa7f4ca2ce335201e20bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4955071527913896934, guid: a506d871626fa7f4ca2ce335201e20bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4955071527913896934, guid: a506d871626fa7f4ca2ce335201e20bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4955071527913896934, guid: a506d871626fa7f4ca2ce335201e20bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4955071527913896934, guid: a506d871626fa7f4ca2ce335201e20bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4955071527913896934, guid: a506d871626fa7f4ca2ce335201e20bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a506d871626fa7f4ca2ce335201e20bf, type: 3}
+--- !u!223 &7139885774588134133 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 5428418062027168434, guid: a506d871626fa7f4ca2ce335201e20bf, type: 3}
+  m_PrefabInstance: {fileID: 2900429485113432135}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5471200914147964682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -101,6 +171,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6df3991356f31a48919e2380b563c38, type: 3}
+--- !u!114 &5059321433421912967 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 998618480917277837, guid: c6df3991356f31a48919e2380b563c38, type: 3}
+  m_PrefabInstance: {fileID: 5471200914147964682}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5059321433514237280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815b754141715949b6689f607f7596f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5059321433514237280 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 998618481093388906, guid: c6df3991356f31a48919e2380b563c38, type: 3}
@@ -162,3 +243,8 @@ MonoBehaviour:
   patrolPath: {fileID: 0}
   waypointTolerance: 0.5
   timeWaitForNextWayPoint: 5
+--- !u!4 &5059321433514237284 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 998618481093388910, guid: c6df3991356f31a48919e2380b563c38, type: 3}
+  m_PrefabInstance: {fileID: 5471200914147964682}
+  m_PrefabAsset: {fileID: 0}
