@@ -3,6 +3,7 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 using RPG.Core;
 using RPG.Attributes;
+using UnityEngine.Events;
 
 namespace RPG.Combat
 {
@@ -11,18 +12,18 @@ namespace RPG.Combat
         [SerializeField] float speed = 3f;
         [SerializeField] bool isHoming;
         [SerializeField] float maxLifeTime = 10f;
-        [SerializeField] float lifeAfterImpact = 2f;
+        [SerializeField] float lifeAfterImpact = 3f;
         [SerializeField] GameObject hitEffect = null;
         [SerializeField] GameObject[] destroyOnHit = null;
+        [SerializeField] UnityEvent onHit;
          Health target = null;
          GameObject instigator = null;
          float damage = 0;
-
         Vector3 targetOffset;
 
         // Update is called once per frame
         private void Start() {
-            // Use this if want Projectiles target position of Colider randomly. 
+            // Use this if want Projectiles target position of Collider randomly. 
             //GenerateRandomTargetOffset();
             transform.LookAt(GetAimTarget());
         }
@@ -43,7 +44,8 @@ namespace RPG.Combat
             {
                 return  target.transform.position;
             }
-            return target.transform.position + targetOffset;
+            return target.transform.position + Vector3.up * targetCapsule.height / 2;
+            //return target.transform.position + targetOffset;
         }
 
         public void SetTarget(Health target,GameObject instigator, float damage)
@@ -66,9 +68,13 @@ namespace RPG.Combat
         {
             if (other.GetComponent<Health>() != target) return;
             if (target.IsDead()) return;
+           
             target.TakeDamage(instigator, damage);
-            //Slowly dissapeear
+            //Slowly dissapear
             speed = 0;
+            onHit.Invoke();
+
+
             if(hitEffect !=null)
             {
                 Instantiate(hitEffect,GetAimTarget(),transform.rotation);
@@ -77,6 +83,7 @@ namespace RPG.Combat
             // Destroy each part of project tiles at different times
             foreach (GameObject toDestroy in destroyOnHit)
             {
+                
                 Destroy(toDestroy);
             }
             Destroy(gameObject, lifeAfterImpact);    

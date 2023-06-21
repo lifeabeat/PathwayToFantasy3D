@@ -6,6 +6,7 @@ using RPG.Core;
 using RPG.Saving;
 using RPG.Stats;
 using RPG.Attributes;
+using RPG.Utils;
 
 namespace RPG.Combat
 {
@@ -16,19 +17,33 @@ namespace RPG.Combat
         
         [SerializeField] Transform rightHandTransform = null;
         [SerializeField] Transform leftHandTransform = null;
-        [SerializeField] Weapon defaultWeapon = null;
+        [SerializeField] WeaponConfig defaultWeapon = null;
 
         Health target;
         // End Atk Longtime ago, If let 0 it first need to run one time
-        float timeSinceLastAttack = Mathf.Infinity; 
-        Weapon currentWeapon = null;
+        float timeSinceLastAttack = Mathf.Infinity;
+        WeaponConfig currentWeapon = null;
+        UtilsValue<Weapon> typeOfCurrentWeapon;
 
         private void Awake() 
         {
-            if(currentWeapon == null)
-            {
-                EquipWeapon(defaultWeapon);
-            }
+            // if(currentWeapon == null)
+            // {
+            //     EquipWeapon(defaultWeapon);
+            // }
+            currentWeapon = defaultWeapon;
+            typeOfCurrentWeapon = new UtilsValue<Weapon>(SetupDefaultWeapon);
+
+        }
+        public Weapon SetupDefaultWeapon()
+        {
+            return AttachWeapon(defaultWeapon);
+        }
+
+        private void Start() {
+
+            // May overridden the default weapon when we do restore
+            typeOfCurrentWeapon.ForceInitialize();
         }
 
         private void Update()
@@ -75,14 +90,20 @@ namespace RPG.Combat
         {
             if (target == null) return;
             float damage = GetComponent<BaseStat>().GetStat(Stat.Damage);
-            if (currentWeapon.HasProjectiles())
+            
+            if (typeOfCurrentWeapon.value != null)
             {
+                typeOfCurrentWeapon.value.OnHit();
+            }
+
+
+            if (currentWeapon.HasProjectiles())
+            {   
                 currentWeapon.LaunchProjectiels(rightHandTransform,leftHandTransform,target, gameObject, damage);
             }
             else 
             {
                 // target.TakeDamage(gameObject, currentWeapon.WeaponDamage());
-               
                 target.TakeDamage(gameObject, damage);
             }
            
@@ -142,11 +163,17 @@ namespace RPG.Combat
             }
         }
 
-        public void EquipWeapon(Weapon weapon)
+        public void EquipWeapon(WeaponConfig weapon)
         {
             currentWeapon = weapon;
+            typeOfCurrentWeapon.value = AttachWeapon(weapon);
+
+        }
+
+        private Weapon AttachWeapon(WeaponConfig weapon)
+        {
             Animator animator = GetComponent<Animator>();
-            weapon.Spawn(rightHandTransform, leftHandTransform, animator);
+            return weapon.Spawn(rightHandTransform, leftHandTransform, animator);
         }
 
         public Health GetTarget()
@@ -164,7 +191,7 @@ namespace RPG.Combat
         public void RestoreState(object state)
         {
             string weaponName = (string)state;
-            Weapon weapon = Resources.Load<Weapon>(weaponName);
+            WeaponConfig weapon = Resources.Load<WeaponConfig>(weaponName);
             EquipWeapon(weapon);
         }
 

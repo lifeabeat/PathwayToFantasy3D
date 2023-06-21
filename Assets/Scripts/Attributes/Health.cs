@@ -13,6 +13,7 @@ namespace RPG.Attributes
     {
         [SerializeField] float regeneratePercentage = 90;
         [SerializeField] TakeDamageEvent takeDamage;
+        [SerializeField] UnityEvent onDie;
         
         [System.Serializable]
         public class TakeDamageEvent : UnityEvent<float>
@@ -87,6 +88,7 @@ namespace RPG.Attributes
         {
             if(isDead) return;
             isDead = true;
+            onDie.Invoke();
             GetComponent<Animator>().SetTrigger("isDead");
             GetComponent<ActionScheduler>().CancelCurrentAction();  
             
