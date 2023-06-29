@@ -89,6 +89,22 @@ PrefabInstance:
       propertyPath: health
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 998618480917277837, guid: c6df3991356f31a48919e2380b563c38, type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 3816872450785341044}
+    - target: {fileID: 998618480917277837, guid: c6df3991356f31a48919e2380b563c38, type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: AggroBehaviour
+      objectReference: {fileID: 0}
+    - target: {fileID: 998618480917277837, guid: c6df3991356f31a48919e2380b563c38, type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: RPG.Control.AIController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 998618480917277837, guid: c6df3991356f31a48919e2380b563c38, type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 998618481093388906, guid: c6df3991356f31a48919e2380b563c38, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -136,6 +152,10 @@ PrefabInstance:
     - target: {fileID: 998618481093388910, guid: c6df3991356f31a48919e2380b563c38, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957127386706148183, guid: c6df3991356f31a48919e2380b563c38, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2216998467681255211, guid: c6df3991356f31a48919e2380b563c38, type: 3}
       propertyPath: m_IsKinematic
@@ -226,6 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  maxNavPathLength: 40
 --- !u!114 &3816872450785341044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +261,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chaseDistance: 5
   suspicionTime: 5
+  aggroTime: 3
+  aggroArea: 4
   patrolPath: {fileID: 0}
   waypointTolerance: 0.5
   timeWaitForNextWayPoint: 5

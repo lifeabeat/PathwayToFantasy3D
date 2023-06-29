@@ -13,6 +13,8 @@ namespace  RPG.Control
     {
         [SerializeField] float chaseDistance = 5f;
         [SerializeField] float suspicionTime = 3f;
+        [SerializeField] float aggroTime = 3f;
+        [SerializeField] float aggroArea = 2f;
         [SerializeField] PatrolPath patrolPath;
         [SerializeField] float waypointTolerance = 0.5f;
         [SerializeField] float timeWaitForNextWayPoint = 3f;
@@ -24,6 +26,7 @@ namespace  RPG.Control
         Vector3 guardPosition;
         float timeSinceLastSawPlayer = Mathf.Infinity;
         float timeSinceArriveAtWayPoint= Mathf.Infinity;
+        float timeSinceAggro = Mathf.Infinity;
 
         private void Awake() {
             health = GetComponent<Health>();
@@ -56,6 +59,7 @@ namespace  RPG.Control
             }
             timeSinceLastSawPlayer +=Time.deltaTime;
             timeSinceArriveAtWayPoint  +=Time.deltaTime;
+            timeSinceAggro += Time.deltaTime;
         }
 
         private void PatrolBehaviour()
@@ -101,18 +105,42 @@ namespace  RPG.Control
         private void AttackBehaviour()
         {
             fighter.Attack(player);
+            AggroNearbyEnemy();
+        }
+
+        private void AggroNearbyEnemy()
+        {
+           RaycastHit[] hits = Physics.SphereCastAll(transform.position, aggroArea, Vector3.up, 0);
+           foreach( RaycastHit hit in hits)
+           {
+                AIController targetArgo = hit.transform.GetComponent<AIController>();
+                if (targetArgo == null) continue;
+                if (targetArgo.timeSinceAggro < targetArgo.aggroTime)
+                {
+                    return;
+                }
+                targetArgo.AggroBehaviour();
+           }
         }
 
         private bool InAttackRangeOfPlayer()
         {
             float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
-            return distanceToPlayer < chaseDistance;
+            
+            return distanceToPlayer < chaseDistance || timeSinceAggro < aggroTime;
+        }
+
+        public void AggroBehaviour()
+        {
+            timeSinceAggro = 0;
         }
 
         private void OnDrawGizmos() 
         {
             Gizmos.color = Color.blue;
-            Gizmos.DrawWireSphere(transform.position,chaseDistance);   
+            Gizmos.DrawWireSphere(transform.position,chaseDistance);
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, aggroArea);
         }
        
     }
