@@ -45,15 +45,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4237247970697992, guid: ba1ddd059de115f44b44ff52413832aa, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4237247970697992, guid: ba1ddd059de115f44b44ff52413832aa, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4237247970697992, guid: ba1ddd059de115f44b44ff52413832aa, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4237247970697992, guid: ba1ddd059de115f44b44ff52413832aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -65,6 +65,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4237247970697992, guid: ba1ddd059de115f44b44ff52413832aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198690249993889400, guid: ba1ddd059de115f44b44ff52413832aa, type: 3}
+      propertyPath: looping
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198690249993889400, guid: ba1ddd059de115f44b44ff52413832aa, type: 3}
@@ -89,15 +93,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198690249993889400, guid: ba1ddd059de115f44b44ff52413832aa, type: 3}
       propertyPath: InitialModule.startRotation.scalar
-      value: -1.0471976
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198690249993889400, guid: ba1ddd059de115f44b44ff52413832aa, type: 3}
       propertyPath: InitialModule.startRotationX.scalar
-      value: 1.5707963
+      value: 3.1415925
       objectReference: {fileID: 0}
     - target: {fileID: 198690249993889400, guid: ba1ddd059de115f44b44ff52413832aa, type: 3}
       propertyPath: InitialModule.startRotationY.scalar
-      value: 3.1415925
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 199512379066230422, guid: ba1ddd059de115f44b44ff52413832aa, type: 3}
       propertyPath: m_Materials.Array.size

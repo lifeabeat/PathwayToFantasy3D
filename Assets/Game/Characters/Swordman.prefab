@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4369447196239642642}
     m_Modifications:
+    - target: {fileID: 164946, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 166696, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 191330, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
       propertyPath: m_Name
       value: Character_Knights_Soldier_02
@@ -55,6 +63,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2347362, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cb6f3344386d8b44ea69a4d8c453389b, type: 2}
+    - target: {fileID: 2392218, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 91e78aa37fa1e8d418f5e38b7d268c7b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
 --- !u!4 &2059924587140094566 stripped
@@ -86,6 +102,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0.10819137
       objectReference: {fileID: 0}
+    - target: {fileID: 4059725602427407385, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
+      propertyPath: defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: bc148eeaa27e6014ba49a6972984cef5, type: 2}
     - target: {fileID: 4059725602427407385, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
       propertyPath: leftHandTransform
       value: 
@@ -150,9 +170,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5819918194791025757, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7148221316927285124, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7149873260261766214, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
       propertyPath: characterClass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7819258798001152929, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}

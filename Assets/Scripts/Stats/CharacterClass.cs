@@ -5,6 +5,9 @@ namespace RPG.Stats
         Player,
         Grunt,
         Archer,
-        Mage
+        Mage,
+        Mob,
+        Ghost,
+        Skeleton
     }
 }

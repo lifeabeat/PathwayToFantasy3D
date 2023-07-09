@@ -79,12 +79,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 672688397486889337, guid: c6df3991356f31a48919e2380b563c38, type: 3}
       propertyPath: uniqueIdentifier
-      value: 824df907-ac2f-4e5c-845e-26880e28b2ea
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 998618480917277818, guid: c6df3991356f31a48919e2380b563c38, type: 3}
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 998618480917277826, guid: c6df3991356f31a48919e2380b563c38, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: d288a0e4a2d923b46898986e979da643, type: 3}
     - target: {fileID: 998618480917277837, guid: c6df3991356f31a48919e2380b563c38, type: 3}
       propertyPath: health
       value: 40
@@ -160,6 +164,14 @@ PrefabInstance:
     - target: {fileID: 2216998467681255211, guid: c6df3991356f31a48919e2380b563c38, type: 3}
       propertyPath: m_IsKinematic
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2942240233546285900, guid: c6df3991356f31a48919e2380b563c38, type: 3}
+      propertyPath: startingLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2942240233546285900, guid: c6df3991356f31a48919e2380b563c38, type: 3}
+      propertyPath: characterClass
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8339143494969490195, guid: c6df3991356f31a48919e2380b563c38, type: 3}
       propertyPath: weapon
