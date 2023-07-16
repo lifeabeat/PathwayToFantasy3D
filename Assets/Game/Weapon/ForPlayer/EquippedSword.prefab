@@ -61,21 +61,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnHitWithSword:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: -161064842945604218}
-        m_TargetAssemblyTypeName: RPG.Combat.Weapon, Assembly-CSharp
-        m_MethodName: OnHitSword
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   hitEffect: {fileID: 134758848478799988, guid: b5064d82e0f2fc147b9a58c50ff3852f, type: 3}
 --- !u!1 &7274358794367478573
 GameObject:
@@ -272,6 +257,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -93.912
       objectReference: {fileID: 0}
+    - target: {fileID: 23019494539852092, guid: 0c14f3ea30af4174ba288b3c2042f665, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4a814d0c5dbba7545b8ddf112351b4e4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c14f3ea30af4174ba288b3c2042f665, type: 3}
 --- !u!4 &3278783605092788000 stripped
