@@ -13,14 +13,7 @@ namespace RPG.Control
     public class PlayerController : MonoBehaviour
     {
         Health health;
-        enum CursorType
-        {
-            None, 
-            Movement,
-            Combat,
-            UI,
-            Pickup
-        }
+
         [System.Serializable]
         struct CursorMapping
         {
