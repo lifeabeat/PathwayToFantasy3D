@@ -7,6 +7,7 @@ using RPG.Saving;
 using RPG.Stats;
 using RPG.Attributes;
 using RPG.Utils;
+using GameDev.Inventories;
 
 namespace RPG.Combat
 {
@@ -20,9 +21,11 @@ namespace RPG.Combat
         [SerializeField] WeaponConfig defaultWeapon = null;
 
         Health target;
+        Equipment equipment;
         // End Atk Longtime ago, If let 0 it first need to run one time
         float timeSinceLastAttack = Mathf.Infinity;
         WeaponConfig currentWeapon = null;
+
         UtilsValue<Weapon> typeOfCurrentWeapon;
 
         private void Awake() 
@@ -33,12 +36,19 @@ namespace RPG.Combat
             // }
             currentWeapon = defaultWeapon;
             typeOfCurrentWeapon = new UtilsValue<Weapon>(SetupDefaultWeapon);
+            // Subscribe for the notification on the equipment component
+            equipment = GetComponent<Equipment>();
+            if (equipment)
+            {
+                equipment.equipmentUpdated += UpdateWeapon;
+            }
 
         }
         public Weapon SetupDefaultWeapon()
         {
             return AttachWeapon(defaultWeapon);
         }
+
 
         private void Start() {
 
@@ -167,7 +177,21 @@ namespace RPG.Combat
                 yield return currentWeapon.GetPercentageBounus();
             }
         }
-
+        private void UpdateWeapon()
+        {
+            //Get the weapon from equipment
+            //Cast to WeaponConfig
+            var weapon = equipment.GetItemInSlot(EquipLocation.Weapon) as WeaponConfig;
+            //Equip Weapon
+            if (weapon == null)
+            {
+                EquipWeapon(defaultWeapon);
+            }
+            else
+            {
+                EquipWeapon(weapon);
+            }
+        }
         public void EquipWeapon(WeaponConfig weapon)
         {
             currentWeapon = weapon;

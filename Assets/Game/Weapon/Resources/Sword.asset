@@ -12,10 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c284003f66585549a7cb17fb8bea01e, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
+  itemID: 003d5f76-dc2e-4a18-9c31-bff5c17a5c86
+  displayName: Sword of Beginning
+  description: '" Every hero have their first weapon and this is yours. "'
+  icon: {fileID: 21300000, guid: bec8f959272e6f6489baf3cc65a0bb35, type: 3}
+  pickup: {fileID: 6555437494691377247, guid: 8afdf0fa6961a6f4682ad25d6b422f16, type: 3}
+  stackable: 0
+  allowedEquipLocation: 5
   equippedPrefab: {fileID: -161064842945604218, guid: aa7f449a5c7b987429ea28186abde287, type: 3}
   animatorOverride: {fileID: 22100000, guid: 82810a4303f5e2142b29ae47f1ae788b, type: 2}
   weaponRange: 2
-  weaponDamage: 2
+  weaponDamage: 5
   percentageBounus: 10
   isRightHanded: 1
   projectiles: {fileID: 0}

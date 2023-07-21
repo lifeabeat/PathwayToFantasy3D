@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c284003f66585549a7cb17fb8bea01e, type: 3}
   m_Name: Bow
   m_EditorClassIdentifier: 
+  itemID: cad6cd1c-4c3a-4fb9-bad2-9f08c7f6854f
+  displayName: Bow Of Dreamer
+  description: '" This bow never miss it target" '
+  icon: {fileID: 21300000, guid: 7dde5cb2729aa4d408920b69ce807fee, type: 3}
+  pickup: {fileID: 2928793958156976355, guid: 987d83ece8dcd5c4a9f22b680019198a, type: 3}
+  stackable: 0
+  allowedEquipLocation: 5
   equippedPrefab: {fileID: 2621265944393701914, guid: 5503eb2ea1a5e644296d4d690d203e56, type: 3}
   animatorOverride: {fileID: 22100000, guid: ec073a11587efa5468ffa8485685db22, type: 2}
   weaponRange: 14

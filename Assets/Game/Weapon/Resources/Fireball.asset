@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c284003f66585549a7cb17fb8bea01e, type: 3}
   m_Name: Fireball
   m_EditorClassIdentifier: 
+  itemID: ddd9e8df-cc09-4bb8-b757-88225e275398
+  displayName: Fireball
+  description: '"  Shoot a "friendly" hot fire ball toward your foe  "'
+  icon: {fileID: 21300000, guid: 2e79d3af42235b841980eaa6a71f8877, type: 3}
+  pickup: {fileID: 7072443790715651216, guid: 3a71ef1de76bd27478682458bcb3e6fa, type: 3}
+  stackable: 0
+  allowedEquipLocation: 5
   equippedPrefab: {fileID: 0}
   animatorOverride: {fileID: 22100000, guid: 7d840f0fdce3943498cd5d7d2da58061, type: 2}
   weaponRange: 16
