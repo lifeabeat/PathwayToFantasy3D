@@ -11,7 +11,7 @@ using GameDev.Inventories;
 
 namespace RPG.Combat
 {
-    public class Fighter : MonoBehaviour, IAction,  ISaveable, IModiferProvider
+    public class Fighter : MonoBehaviour, IAction,  ISaveable
     {
         
         [SerializeField] float  timeBetweenAttaack = 1.2f;
@@ -162,21 +162,6 @@ namespace RPG.Combat
             GetComponent<Animator>().ResetTrigger("isAttack");
         }
 
-        public IEnumerable<float> GetAdditiveModifier(Stat stat)
-        {
-            if (stat == Stat.Damage)
-            {
-                yield return currentWeapon.WeaponDamage();
-            }   
-        }
-
-        public IEnumerable<float> GetPercentageModifer(Stat stat)
-        {
-            if (stat == Stat.Damage)
-            {
-                yield return currentWeapon.GetPercentageBounus();
-            }
-        }
         private void UpdateWeapon()
         {
             //Get the weapon from equipment

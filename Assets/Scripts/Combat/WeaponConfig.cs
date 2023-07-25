@@ -1,13 +1,15 @@
 using System;
 using RPG.Attributes;
 using RPG.Core;
+using RPG.Stats;
 using UnityEngine;
 using GameDev.Inventories;
+using System.Collections.Generic;
 
 namespace RPG.Combat
 {
     [CreateAssetMenu(fileName = "Weapon", menuName = "RPG PathwayToFantasy/Weapon", order = 0)]
-        public class WeaponConfig : EquipableItem
+        public class WeaponConfig : EquipableItem, IModiferProvider
         {
             [SerializeField] Weapon equippedPrefab = null;
             [SerializeField] AnimatorOverrideController animatorOverride = null;
@@ -95,7 +97,21 @@ namespace RPG.Combat
             {
                 return weaponRange;
             }
-            
-    
+
+        public IEnumerable<float> GetAdditiveModifier(Stat stat)
+        {
+            if (stat == Stat.Damage)
+            {
+                yield return weaponDamage;
+            }
         }
+
+        public IEnumerable<float> GetPercentageModifer(Stat stat)
+        {
+            if (stat == Stat.Damage)
+            {
+                yield return percentageBounus;
+            }
+        }
+    }
 }
