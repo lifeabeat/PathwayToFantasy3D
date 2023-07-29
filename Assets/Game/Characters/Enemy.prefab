@@ -94,6 +94,26 @@ PrefabInstance:
       value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 998618480917277837, guid: c6df3991356f31a48919e2380b563c38, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 998618480917277837, guid: c6df3991356f31a48919e2380b563c38, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 998618480917277837, guid: c6df3991356f31a48919e2380b563c38, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5225556755821886489}
+    - target: {fileID: 998618480917277837, guid: c6df3991356f31a48919e2380b563c38, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 998618480917277837, guid: c6df3991356f31a48919e2380b563c38, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: RandomDrop
+      objectReference: {fileID: 0}
+    - target: {fileID: 998618480917277837, guid: c6df3991356f31a48919e2380b563c38, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 3816872450785341044}
@@ -102,8 +122,16 @@ PrefabInstance:
       value: AggroBehaviour
       objectReference: {fileID: 0}
     - target: {fileID: 998618480917277837, guid: c6df3991356f31a48919e2380b563c38, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: RPG.Inventories.RandomDropper, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 998618480917277837, guid: c6df3991356f31a48919e2380b563c38, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: RPG.Control.AIController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 998618480917277837, guid: c6df3991356f31a48919e2380b563c38, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 998618480917277837, guid: c6df3991356f31a48919e2380b563c38, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -278,6 +306,22 @@ MonoBehaviour:
   patrolPath: {fileID: 0}
   waypointTolerance: 0.5
   timeWaitForNextWayPoint: 5
+--- !u!114 &5225556755821886489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5059321433514237280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bc89f90eba09ca48830b91bd22275d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scatterDistance: 1
+  dropLibrary:
+  - {fileID: 11400000, guid: 31b0a5cebc7dcd541b8dea90245aabd8, type: 2}
+  numberOfDrop: 0
 --- !u!4 &5059321433514237284 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 998618481093388910, guid: c6df3991356f31a48919e2380b563c38, type: 3}
