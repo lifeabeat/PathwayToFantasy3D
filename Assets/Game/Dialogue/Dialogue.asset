@@ -1,5 +1,25 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8901138540240598506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 0d8d3b5b-0fb4-42e4-9966-a074f8a2cde5
+  m_EditorClassIdentifier: 
+  text: 
+  anwser: []
+  rect:
+    serializedVersion: 2
+    x: 536
+    y: 193
+    width: 200
+    height: 100
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7,36 +27,54 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8700d6cacb51a334aae8678c9097e917, type: 3}
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   nodes:
-  - uniqueID: a
-    text: Hello
-    anwser: []
-    rect:
-      serializedVersion: 2
-      x: 353
-      y: 57
-      width: 200
-      height: 100
-  - uniqueID: b
-    text: Hello there
-    anwser: []
-    rect:
-      serializedVersion: 2
-      x: 35
-      y: 37
-      width: 200
-      height: 100
-  - uniqueID: c
-    text: Shooh
-    anwser: []
-    rect:
-      serializedVersion: 2
-      x: 329
-      y: 240
-      width: 200
-      height: 100
+  - {fileID: 3603978060614266457}
+  - {fileID: -8901138540240598506}
+  - {fileID: 1810885639036837337}
+--- !u!114 &1810885639036837337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 0f94c3c8-ec8f-4043-a6c4-88b33c566dde
+  m_EditorClassIdentifier: 
+  text: 
+  anwser: []
+  rect:
+    serializedVersion: 2
+    x: 331
+    y: 412
+    width: 200
+    height: 100
+--- !u!114 &3603978060614266457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: baf15cd3-a704-44b4-a04a-df9d62087bd1
+  m_EditorClassIdentifier: 
+  text: 
+  anwser:
+  - 0d8d3b5b-0fb4-42e4-9966-a074f8a2cde5
+  - 0f94c3c8-ec8f-4043-a6c4-88b33c566dde
+  rect:
+    serializedVersion: 2
+    x: 75
+    y: 111
+    width: 200
+    height: 100
