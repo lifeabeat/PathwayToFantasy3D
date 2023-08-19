@@ -47,7 +47,7 @@ namespace RPG.Control
                 return;
             }
             if (InteractWithComponent()) return;
-            if (InteractWithCombat()) return;
+            // if (InteractWithCombat()) return;
             if (InteractWithMovement()) return;
             
             SetCursor(CursorType.None);
@@ -90,7 +90,7 @@ namespace RPG.Control
                     if (raycastable.HandleRaycast(this))
                     {
                 
-                        SetCursor(CursorType.Pickup);
+                        SetCursor(raycastable.GetCursorType());
                         return true;
                     }
                     
@@ -119,29 +119,31 @@ namespace RPG.Control
 
 
         // Use bool to seperate when Click to Attack from Movement, prevent priority messup 
-        private bool InteractWithCombat()
-        {
-            RaycastHit [] hits = Physics.RaycastAll(GetMouseRay());
-            foreach (RaycastHit hit in hits)
-            {
-                // Get Tranform/Collider from hit
-                CombatTarget target = hit.transform.GetComponent<CombatTarget>();
+        // private bool InteractWithCombat()
+        // {
+        //     RaycastHit [] hits = Physics.RaycastAll(GetMouseRay());
+        //     foreach (RaycastHit hit in hits)
+        //     {
+        //         // Get Tranform/Collider from hit
+        //         CombatTarget target = hit.transform.GetComponent<CombatTarget>();
 
-                if(target == null ) continue;
+        //         if(target == null ) continue;
 
-                if (!GetComponent<Fighter>().CanAttack(target.gameObject))
-                {
-                    continue;
-                }
-                if (Input.GetMouseButton(0))
-                {
-                    GetComponent<Fighter>().Attack(target.gameObject);
-                }
-                SetCursor(CursorType.Combat);
-                return true;
-            }
-            return false;
-        }
+        //         if (!enabled) return false;
+
+        //         if (!GetComponent<Fighter>().CanAttack(target.gameObject))
+        //         {
+        //             continue;
+        //         }
+        //         if (Input.GetMouseButton(0))
+        //         {
+        //             GetComponent<Fighter>().Attack(target.gameObject);
+        //         }
+        //         SetCursor(CursorType.Combat);
+        //         return true;
+        //     }
+        //     return false;
+        // }
 
     
         private bool InteractWithMovement()

@@ -23,7 +23,7 @@ namespace RPG.Control
             }
             else
             {
-                return CursorType.FullPickup;
+                return CursorType.None;
             }
         }
 
