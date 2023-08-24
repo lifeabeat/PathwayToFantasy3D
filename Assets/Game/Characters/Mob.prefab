@@ -67,6 +67,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5059321433514237286, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7d3d9f1a4f3beac4aa10a10845177601, type: 2}
     - target: {fileID: 5225556755821886489, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
       propertyPath: dropLibrary
       value: 
@@ -78,6 +82,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5059321433514237284, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
   m_PrefabInstance: {fileID: 447238273172299462}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4612454434570896294 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5059321433514237280, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
+  m_PrefabInstance: {fileID: 447238273172299462}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7907075724066160026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4612454434570896294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a069246f834468d43a97d209cf90d801, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 0}
+  objective: 
 --- !u!1001 &616078733644776882
 PrefabInstance:
   m_ObjectHideFlags: 0
