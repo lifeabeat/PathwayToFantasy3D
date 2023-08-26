@@ -57,6 +57,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bec398114a29f44286d4e48bb0e0de3, type: 3}
+--- !u!4 &1036360733073981333 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 458870, guid: 5bec398114a29f44286d4e48bb0e0de3, type: 3}
+  m_PrefabInstance: {fileID: 1036360733074309091}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1036360733073982941 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 490046, guid: 5bec398114a29f44286d4e48bb0e0de3, type: 3}
+  m_PrefabInstance: {fileID: 1036360733074309091}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1435666275768960264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68,13 +78,25 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4059725602427407385, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
+      propertyPath: leftHandTransform
+      value: 
+      objectReference: {fileID: 1036360733073982941}
+    - target: {fileID: 4059725602427407385, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
+      propertyPath: rightHandTransform
+      value: 
+      objectReference: {fileID: 1036360733073981333}
     - target: {fileID: 5059321433421912967, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
       propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5059321433421912968, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: fd7d68a65822e4a44a9ef78850e64cfc, type: 3}
     - target: {fileID: 5059321433514237280, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
       propertyPath: m_Name
-      value: NPC
+      value: NPC-Shop
       objectReference: {fileID: 0}
     - target: {fileID: 5059321433514237284, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
       propertyPath: m_RootOrder

@@ -6,7 +6,7 @@ using GameDev.Inventories;
 
 namespace RPG.Control
 {
-    public class ClickablePickup : MonoBehaviour, IRaycastable
+    public class ClickablePickup : Pickup, IRaycastable
     {
         Pickup pickup;
 
@@ -17,21 +17,15 @@ namespace RPG.Control
 
         public CursorType GetCursorType()
         {
-            if (pickup.CanBePickedUp())
-            {
-                return CursorType.Pickup;
-            }
-            else
-            {
-                return CursorType.None;
-            }
+             return CursorType.Pickup;
         }
 
         public bool HandleRaycast(PlayerController callingController)
         {
             if (Input.GetMouseButtonDown(0))
             {
-                pickup.PickupItem();
+                callingController.GetComponent<ItemCollector>().CollectItem(pickup);
+            
             }
             return true;
         }

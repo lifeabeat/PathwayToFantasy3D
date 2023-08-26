@@ -11,6 +11,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4059725602427407385, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
+      propertyPath: leftHandTransform
+      value: 
+      objectReference: {fileID: 1931669387053519823}
+    - target: {fileID: 4059725602427407385, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
+      propertyPath: rightHandTransform
+      value: 
+      objectReference: {fileID: 1931669387053527503}
     - target: {fileID: 5059321433421912967, guid: 48915132dcd1aa9409e8d7740702e014, type: 3}
       propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -148,3 +156,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a680ac69aa15dce4ca3d34bc515f671d, type: 3}
+--- !u!4 &1931669387053519823 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 433440, guid: a680ac69aa15dce4ca3d34bc515f671d, type: 3}
+  m_PrefabInstance: {fileID: 1931669387053682415}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1931669387053527503 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 442144, guid: a680ac69aa15dce4ca3d34bc515f671d, type: 3}
+  m_PrefabInstance: {fileID: 1931669387053682415}
+  m_PrefabAsset: {fileID: 0}

@@ -1,12 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using GameDev.Inventories;
+using RPG.Saving;
 using UnityEngine;
 
 namespace  RPG.Quests
 {
    
-    public class QuestList : MonoBehaviour
+    public class QuestList : MonoBehaviour, ISaveable
     {
         List<QuestStatus> statuses = new List<QuestStatus>();
         public event Action onUpdate;
@@ -36,11 +38,17 @@ namespace  RPG.Quests
         {
             QuestStatus status = GetQuestStatus(quest);
             status.CompleteObjective(objective);
+            if (status.IsComplete())
+            {
+                GiveReward(quest);
+            }
             if (onUpdate != null)
             {
                 onUpdate();
             }
         }
+
+        
 
         private QuestStatus GetQuestStatus(Quest quest)
         {
@@ -53,6 +61,42 @@ namespace  RPG.Quests
             }
             return null;
         }
+
+        private void GiveReward(Quest quest)
+        {
+            foreach (var reward in quest.GetRewards())
+            {
+              bool sucess =  GetComponent<Inventory>().AddToFirstEmptySlot(reward.item, reward.number);
+              if(!sucess)
+              {
+                GetComponent<ItemDropper>().DropItem(reward.item, reward.number);
+              }
+            }
+        }
+
+        public object CaptureState()
+        {
+            List<object> state = new List<object>();
+            foreach (QuestStatus status in statuses)
+            {
+                state.Add(status.CaptureState());
+            }
+            return state;
+        }
+
+        public void RestoreState(object state)
+        {
+            List<object> stateList = state as List<object>;
+            if (stateList == null) return;
+
+            statuses.Clear();
+            foreach (object objectState in stateList)
+            {
+                statuses.Add(new QuestStatus(objectState));
+            }
+        }
+
+
     }
 
 
