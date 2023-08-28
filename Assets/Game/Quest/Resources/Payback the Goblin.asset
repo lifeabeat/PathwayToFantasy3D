@@ -12,5 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9880dac5e987111469ac47a1796e4715, type: 3}
   m_Name: Payback the Goblin
   m_EditorClassIdentifier: 
-  objectives: []
-  rewards: []
+  objectives:
+  - reference: 1
+    description: Kill 1st Goblin
+  - reference: 2
+    description: Kill 2st Goblin
+  - reference: 3
+    description: Kill 3st Goblin
+  - reference: 4
+    description: Kill 4th Goblin
+  - reference: 5
+    description: Kill 5th Goblin
+  rewards:
+  - number: 1
+    item: {fileID: 11400000, guid: 95f738903e2646c4b8229940906e4f9c, type: 2}

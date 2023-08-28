@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 357a897f3fb8beb4298a52f913fe7d7d, type: 3}
+  m_Name: Helmet Of Warrior
+  m_EditorClassIdentifier: 
+  itemID: 79577c57-b961-40f8-aea6-c500411df0f8
+  displayName: Helmet Of Warrior
+  description: '" A mighty one once wear this helmet to the battle. "
+
+    Euquiped:
+    +10 Health'
+  icon: {fileID: 21300000, guid: a3d0540f11eae0b4a94158bec1c6dcc3, type: 3}
+  pickup: {fileID: 5778054926976623152, guid: 787c1d551f7a6d647ab72261aefc6c0d, type: 3}
+  stackable: 0
+  allowedEquipLocation: 0
+  additiveModifier:
+  - stat: 0
+    value: 20
+  percentageModifiers: []

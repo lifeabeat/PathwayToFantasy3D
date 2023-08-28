@@ -1,0 +1,554 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8842287396326900217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 83b4b16c-6c06-4e4d-b396-f3f371592e31
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I just come here for a while. I'm Aiden. Who are you ?
+  anwser:
+  - aa2b6974-e19e-4ce5-a5af-d220b2a3cca8
+  rect:
+    serializedVersion: 2
+    x: 585
+    y: 22
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-8731010741550237752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: d7e1fb57-f6c5-4d96-a686-389e515bd0e6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I'm alread on your request.
+  anwser:
+  - 6e3463a3-ce0b-47a9-a51e-81a727efcb10
+  rect:
+    serializedVersion: 2
+    x: 174
+    y: 554
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: HasQuest
+    parameters:
+    - The Outcast
+--- !u!114 &-8516669198841293644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 8e5cf638-eadd-4b6f-9531-3a5115b6cd2f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: (Sigh) Okay, what is it ?
+  anwser:
+  - 844e0a9a-6183-4a63-8d26-e4a553ec4fb3
+  rect:
+    serializedVersion: 2
+    x: 599
+    y: 442
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-8513674215960383781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: aa2b6974-e19e-4ce5-a5af-d220b2a3cca8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'People call me Kevin, Chief of this village.  '
+  anwser:
+  - 5cfaed05-0234-4fb6-b7cf-b382f5b6e305
+  rect:
+    serializedVersion: 2
+    x: 855
+    y: 2
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-8326169262405482625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 737b4d4f-155a-4ef7-9921-cda5444239c5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Liar, there is no Mr.Beast or Town from the North.
+  anwser:
+  - c7c825ad-00fd-4ef7-a985-67ae9dacaf4c
+  rect:
+    serializedVersion: 2
+    x: 593
+    y: 191
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-5615721417432668216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 6e3463a3-ce0b-47a9-a51e-81a727efcb10
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Good.
+  anwser: []
+  rect:
+    serializedVersion: 2
+    x: 424
+    y: 554
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-4265200786170569857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 5cfaed05-0234-4fb6-b7cf-b382f5b6e305
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Nice to meet you Chief. Since you calling for me, I guess you want me to
+    do something right ?
+  anwser:
+  - 5054579b-4e13-4021-92e4-4ef483ff7fb8
+  rect:
+    serializedVersion: 2
+    x: 861
+    y: 125
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-3906247780200893072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: ad14bbad-35e7-4e74-8ef5-2cf5ff42768f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Oh, then you must know Mr.Beast
+  anwser:
+  - a515c5ce-6fde-4db6-9eb1-c95f79bffd0c
+  - b6cd6074-94df-4da3-93d0-f4bec846668b
+  rect:
+    serializedVersion: 2
+    x: 131
+    y: 146
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-1632596940494750140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 1ddc0730-6b47-4d92-bd47-16a134359405
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Yes, you don't look like those folk around here ? Newcomer heh?
+  anwser:
+  - 83b4b16c-6c06-4e4d-b396-f3f371592e31
+  - c27d69bc-d955-4d55-93c5-14c38a7079b4
+  rect:
+    serializedVersion: 2
+    x: 390
+    y: 21
+    width: 200
+    height: 100
+  onEnterAction: AroundTown2
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-1296380414414560351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 5054579b-4e13-4021-92e4-4ef483ff7fb8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Ahaha, smart one.
+  anwser:
+  - 844e0a9a-6183-4a63-8d26-e4a553ec4fb3
+  rect:
+    serializedVersion: 2
+    x: 854
+    y: 229
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8700d6cacb51a334aae8678c9097e917, type: 3}
+  m_Name: Bandit
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 1828419892105821642}
+  - {fileID: 919663054620491835}
+  - {fileID: -1632596940494750140}
+  - {fileID: -8842287396326900217}
+  - {fileID: 6003661745038561521}
+  - {fileID: -3906247780200893072}
+  - {fileID: -8513674215960383781}
+  - {fileID: 1495356804462182948}
+  - {fileID: -8326169262405482625}
+  - {fileID: 4206143160519887088}
+  - {fileID: 7373016808500977882}
+  - {fileID: -8516669198841293644}
+  - {fileID: -4265200786170569857}
+  - {fileID: -1296380414414560351}
+  - {fileID: 2939157530365410207}
+  - {fileID: 2450423271644443446}
+  - {fileID: 2602566495757734885}
+  - {fileID: -8731010741550237752}
+  - {fileID: -5615721417432668216}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &919663054620491835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 015b366e-6217-4463-ace5-afec6edae7e7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: (Suprise) Are you talking to me ?
+  anwser:
+  - 1ddc0730-6b47-4d92-bd47-16a134359405
+  rect:
+    serializedVersion: 2
+    x: 188
+    y: -32
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &1495356804462182948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: a515c5ce-6fde-4db6-9eb1-c95f79bffd0c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Yeah, He's my friend. We live in the same neighborhood.
+  anwser:
+  - 737b4d4f-155a-4ef7-9921-cda5444239c5
+  rect:
+    serializedVersion: 2
+    x: 250
+    y: 318
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &1828419892105821642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 99664b45-f7f2-43da-a68c-eded2ad22985
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Hey you over there !
+  anwser:
+  - 015b366e-6217-4463-ace5-afec6edae7e7
+  - d7e1fb57-f6c5-4d96-a686-389e515bd0e6
+  rect:
+    serializedVersion: 2
+    x: -18
+    y: 40
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &2450423271644443446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 101a96d4-c07c-474a-8e5f-6545e72419a2
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: How can I handle them with my bare hand ?
+  anwser:
+  - 6d859754-18ce-4588-ad77-3a69dbe555ff
+  rect:
+    serializedVersion: 2
+    x: 1142
+    y: 99
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &2602566495757734885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 6d859754-18ce-4588-ad77-3a69dbe555ff
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Go help the others first, they will give you something to fight. After that
+    you can handle my request.
+  anwser: []
+  rect:
+    serializedVersion: 2
+    x: 1166
+    y: 206
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &2939157530365410207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 844e0a9a-6183-4a63-8d26-e4a553ec4fb3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'In the north-west from this village, there is a small Rogue group. I need
+    you to handle two of them. '
+  anwser:
+  - 101a96d4-c07c-474a-8e5f-6545e72419a2
+  rect:
+    serializedVersion: 2
+    x: 894
+    y: 380
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: GiveQuest
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &4206143160519887088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: b6cd6074-94df-4da3-93d0-f4bec846668b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: To be honest, I lied.
+  anwser:
+  - 83b4b16c-6c06-4e4d-b396-f3f371592e31
+  rect:
+    serializedVersion: 2
+    x: 244
+    y: 449
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &6003661745038561521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: c27d69bc-d955-4d55-93c5-14c38a7079b4
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: (Lie ) I'm live north from here, my name is Aiden.
+  anwser:
+  - ad14bbad-35e7-4e74-8ef5-2cf5ff42768f
+  rect:
+    serializedVersion: 2
+    x: 287
+    y: 199
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &7373016808500977882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: c7c825ad-00fd-4ef7-a985-67ae9dacaf4c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I'm Chief of this town, the name is Kevin. Since this is your first time
+    commit a lie, I'll let this pass if you do me a favor.
+  anwser:
+  - 8e5cf638-eadd-4b6f-9531-3a5115b6cd2f
+  rect:
+    serializedVersion: 2
+    x: 600
+    y: 322
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []

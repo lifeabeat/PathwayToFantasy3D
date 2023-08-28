@@ -18,8 +18,12 @@ public class QuestListUI : MonoBehaviour
 
     private void Redraw()
     {
-        transform.DetachChildren();
-        
+        // transform.DetachChildren();
+        foreach (Transform item in transform)
+        {
+            Destroy(item.gameObject);
+        }
+
         foreach (QuestStatus status in questList.GetStatuses())
         {
             QuestItemUI uiInstance = Instantiate<QuestItemUI>(questPrefab, transform);

@@ -1,0 +1,864 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8183483205588107284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 0d2d6dd9-fc7d-47af-8101-714c3401178c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Haha, it''s okay. You remind me of my old son. '
+  anwser:
+  - f1281155-7482-4140-9b4b-73fde7b6a44d
+  rect:
+    serializedVersion: 2
+    x: 491
+    y: 354
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-6972333564209119364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: cd2522aa-67c3-4054-9888-5fc085f7846d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Hi Newt, about your son helmet
+  anwser:
+  - e55968b3-2851-4b3e-bf5e-a378e3bb246c
+  - 31b77005-5113-47ec-8430-ada06b5366b7
+  rect:
+    serializedVersion: 2
+    x: 117
+    y: 609
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: HasQuest
+    parameters:
+    - Son's Memorial
+--- !u!114 &-6949495902153476662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: d6f8e68e-55a2-4c0a-a623-55043ca1193e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'I''m sorry about it. Is there anything I can do ? '
+  anwser:
+  - 7093f97a-7cc9-477d-a84a-19013b7bb503
+  rect:
+    serializedVersion: 2
+    x: 695
+    y: 456
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-5561787076385921703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 773185d7-591d-4bf5-91e9-d4d18bc1a763
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'This land call Dreamnia, you are in a part of it. '
+  anwser:
+  - 3eff74a2-65c9-4b49-9b93-2600776e4dbe
+  rect:
+    serializedVersion: 2
+    x: 492
+    y: 2
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-5117747454315280330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 31d99baa-c6b7-40e5-9ae8-cd5534db2e5c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: ... You're right.
+  anwser:
+  - 3a1d1f60-768f-4dce-bb36-996dc6491ca0
+  rect:
+    serializedVersion: 2
+    x: 977
+    y: 302
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-4945847055258576993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 808ae328-eb3f-482c-a572-fb1e08d896e1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I got you man.
+  anwser:
+  - ffc2f537-631a-4127-862d-a41ee134159f
+  rect:
+    serializedVersion: 2
+    x: 1047
+    y: 460
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-4684529788499980977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: e6fb7e4b-8301-421a-9a86-d292a697d764
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Well, If i can live to that time haha.
+  anwser: []
+  rect:
+    serializedVersion: 2
+    x: 1292
+    y: 799
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: SonMemory
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-4549564783267592414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 6d781987-2df1-45b9-a34e-9c84f9b949c5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Okay, thank you.
+  anwser: []
+  rect:
+    serializedVersion: 2
+    x: 800
+    y: 603
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-4199106533377860615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 7093f97a-7cc9-477d-a84a-19013b7bb503
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: If you can find a helmet with 2 horn, bring it back to me. It's belong to
+    my son so that I can memory of him.
+  anwser:
+  - 808ae328-eb3f-482c-a572-fb1e08d896e1
+  rect:
+    serializedVersion: 2
+    x: 814
+    y: 531
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: GiveQuest2
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-2037531293909265026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: dda20930-deaf-4ef2-bd63-58f54505bb23
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: What is this place ?
+  anwser:
+  - 773185d7-591d-4bf5-91e9-d4d18bc1a763
+  rect:
+    serializedVersion: 2
+    x: 277
+    y: 40
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-1542044862991517642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: a9f3d4e2-8a3b-4752-8511-5e88fcd019d8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Young man, calm down. Let's take a breath and look around the town. Maybe
+    you'll remember something
+  anwser:
+  - 31d99baa-c6b7-40e5-9ae8-cd5534db2e5c
+  rect:
+    serializedVersion: 2
+    x: 719
+    y: 338
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-1335750015243264350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: f1281155-7482-4140-9b4b-73fde7b6a44d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Where is he now ?
+  anwser:
+  - c03c3201-41b9-4c6b-8bda-d5046c628b81
+  rect:
+    serializedVersion: 2
+    x: 215
+    y: 450
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8700d6cacb51a334aae8678c9097e917, type: 3}
+  m_Name: AroundTown
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 3835456735863665237}
+  - {fileID: -2037531293909265026}
+  - {fileID: -5561787076385921703}
+  - {fileID: 4985084820707437747}
+  - {fileID: 906712752387223766}
+  - {fileID: 731211959377534246}
+  - {fileID: 8718034762638601063}
+  - {fileID: 3767919077707967977}
+  - {fileID: -1542044862991517642}
+  - {fileID: -5117747454315280330}
+  - {fileID: 4718883942814654778}
+  - {fileID: 7756559544796313888}
+  - {fileID: -8183483205588107284}
+  - {fileID: -1335750015243264350}
+  - {fileID: 8045311664094521927}
+  - {fileID: -6949495902153476662}
+  - {fileID: -4199106533377860615}
+  - {fileID: -4945847055258576993}
+  - {fileID: 1024440665896942590}
+  - {fileID: -6972333564209119364}
+  - {fileID: 8278013474278886451}
+  - {fileID: 7050467485369474068}
+  - {fileID: 2185940064785504890}
+  - {fileID: -4549564783267592414}
+  - {fileID: 5427735485471634439}
+  - {fileID: 2539702166585048745}
+  - {fileID: 6686777859693334957}
+  - {fileID: 6053134631960536569}
+  - {fileID: 4442700520426760023}
+  - {fileID: -4684529788499980977}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &731211959377534246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 3eff74a2-65c9-4b49-9b93-2600776e4dbe
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: (Panic) I want to get out of here. How can I get out of this land ?
+  anwser:
+  - be35916c-cd53-4fb6-af6e-e457664bf57a
+  rect:
+    serializedVersion: 2
+    x: 717
+    y: 19
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &906712752387223766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 93484c47-c8dd-4ddf-91ea-c16814d9c5ca
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I'm Newton, you can call me Newt.
+  anwser:
+  - 3eff74a2-65c9-4b49-9b93-2600776e4dbe
+  rect:
+    serializedVersion: 2
+    x: 487
+    y: 118
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &1024440665896942590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: ffc2f537-631a-4127-862d-a41ee134159f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thanks, really...
+  anwser: []
+  rect:
+    serializedVersion: 2
+    x: 1297
+    y: 459
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &2185940064785504890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 04b8731e-6183-466d-b45b-b247f594f448
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Actually, I'm working on it.
+  anwser:
+  - 6d781987-2df1-45b9-a34e-9c84f9b949c5
+  rect:
+    serializedVersion: 2
+    x: 569
+    y: 577
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &2539702166585048745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: b8f764f7-0bb4-415e-9cae-d49f6d2e3b64
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I got the feeling that my son want to fight by your side. He also a warrior
+    just like you. You can keep that helmet
+  anwser:
+  - a2bec47e-c3d4-444b-aa29-5f46920fde34
+  rect:
+    serializedVersion: 2
+    x: 347
+    y: 832
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &3767919077707967977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: d61257a9-2691-4fa1-996f-f03a6564aac0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: (Confuse) I don't know, ...
+  anwser:
+  - a9f3d4e2-8a3b-4752-8511-5e88fcd019d8
+  rect:
+    serializedVersion: 2
+    x: 724
+    y: 238
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &3835456735863665237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 31696c82-48b4-43e8-804f-79f9f4ea8ef1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Hello there, young traverler.
+  anwser:
+  - dda20930-deaf-4ef2-bd63-58f54505bb23
+  - bb3a4ac9-f205-4918-9ed5-0c15f75161b7
+  - cd47f986-c4e8-4e81-b638-9296bd82b495
+  - cd2522aa-67c3-4054-9888-5fc085f7846d
+  rect:
+    serializedVersion: 2
+    x: -2
+    y: 181
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &4442700520426760023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 22dad649-6011-4bb6-8317-ece84fbf894f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Thank you, Newt. I will keep it good so that one day I can return it to you.
+  anwser:
+  - e6fb7e4b-8301-421a-9a86-d292a697d764
+  rect:
+    serializedVersion: 2
+    x: 1047
+    y: 824
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &4718883942814654778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 3a1d1f60-768f-4dce-bb36-996dc6491ca0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Take a walk, try to talk with other people in town, may be the other know
+    something.
+  anwser: []
+  rect:
+    serializedVersion: 2
+    x: 1225
+    y: 310
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: GiveQuest1
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &4985084820707437747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: bb3a4ac9-f205-4918-9ed5-0c15f75161b7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Who are you ?
+  anwser:
+  - 93484c47-c8dd-4ddf-91ea-c16814d9c5ca
+  rect:
+    serializedVersion: 2
+    x: 270
+    y: 219
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &5427735485471634439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 37a38f6b-bd9a-4ff8-80e0-d60b2dc2e7bb
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thank you so much, that it. I'm trying to find it all this time, but can't
+    find anywhere.
+  anwser:
+  - b8f764f7-0bb4-415e-9cae-d49f6d2e3b64
+  rect:
+    serializedVersion: 2
+    x: 605
+    y: 703
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &6053134631960536569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 68c3ff5c-2a03-49aa-994f-c09c04f7b406
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: He always lives in my heart.
+  anwser:
+  - 22dad649-6011-4bb6-8317-ece84fbf894f
+  rect:
+    serializedVersion: 2
+    x: 797
+    y: 824
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &6686777859693334957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: a2bec47e-c3d4-444b-aa29-5f46920fde34
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Then what about your son ?
+  anwser:
+  - 68c3ff5c-2a03-49aa-994f-c09c04f7b406
+  rect:
+    serializedVersion: 2
+    x: 563
+    y: 825
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &7050467485369474068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 31b77005-5113-47ec-8430-ada06b5366b7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Any news about it ?
+  anwser:
+  - 04b8731e-6183-466d-b45b-b247f594f448
+  rect:
+    serializedVersion: 2
+    x: 356
+    y: 585
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &7756559544796313888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: cd47f986-c4e8-4e81-b638-9296bd82b495
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I'm better now. Thank you for your advice.
+  anwser:
+  - 0d2d6dd9-fc7d-47af-8101-714c3401178c
+  rect:
+    serializedVersion: 2
+    x: 227
+    y: 339
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: HasQuest
+    parameters:
+    - A tour around town
+--- !u!114 &8045311664094521927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: c03c3201-41b9-4c6b-8bda-d5046c628b81
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'He passed away years ago by those Outcast. '
+  anwser:
+  - d6f8e68e-55a2-4c0a-a623-55043ca1193e
+  rect:
+    serializedVersion: 2
+    x: 451
+    y: 458
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &8278013474278886451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: e55968b3-2851-4b3e-bf5e-a378e3bb246c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Is this your son's helmet ?
+  anwser:
+  - 37a38f6b-bd9a-4ff8-80e0-d60b2dc2e7bb
+  rect:
+    serializedVersion: 2
+    x: 354
+    y: 722
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: HasInventoryItem
+    parameters:
+    - 79577c57-b961-40f8-aea6-c500411df0f8
+--- !u!114 &8718034762638601063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: be35916c-cd53-4fb6-af6e-e457664bf57a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: How da hell do I know about it, but  where do you wanna go ?
+  anwser:
+  - d61257a9-2691-4fa1-996f-f03a6564aac0
+  rect:
+    serializedVersion: 2
+    x: 724
+    y: 134
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
