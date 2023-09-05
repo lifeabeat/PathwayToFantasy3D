@@ -17,6 +17,4 @@ MonoBehaviour:
     description: Kill 1st Rogue
   - reference: 2
     description: Kill 2nd Rogue
-  rewards:
-  - number: 1
-    item: {fileID: 11400000, guid: cea0bc1db1f09ea44af66c2c4f1b006f, type: 2}
+  rewards: []
