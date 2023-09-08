@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c284003f66585549a7cb17fb8bea01e, type: 3}
   m_Name: SwordForEnemy
   m_EditorClassIdentifier: 
+  itemID: 40e3a545-e30f-4edc-a8be-84a95b1a913e
+  displayName: Sword
+  description: 
+  icon: {fileID: 0}
+  pickup: {fileID: 0}
+  stackable: 0
+  allowedEquipLocation: 5
   equippedPrefab: {fileID: 6308302053301953251, guid: d16bce58561b2f04482bcaae669c8ae2, type: 3}
   animatorOverride: {fileID: 22100000, guid: 82810a4303f5e2142b29ae47f1ae788b, type: 2}
   weaponRange: 2

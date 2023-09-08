@@ -17,4 +17,6 @@ MonoBehaviour:
     description: Talk with Villager
   - reference: 2
     description: Talk with Chief
-  rewards: []
+  rewards:
+  - number: 1
+    item: {fileID: 11400000, guid: 1725a0a844bcab849bfcc7bff2b68070, type: 2}

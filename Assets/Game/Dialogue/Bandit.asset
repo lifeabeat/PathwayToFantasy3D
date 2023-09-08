@@ -96,7 +96,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 253
-    y: 157
+    y: 156
     width: 200
     height: 100
   onEnterAction: 
@@ -106,7 +106,7 @@ MonoBehaviour:
     - or:
       - predicate: HasInventoryItem
         parameters:
-        - 003d5f76-dc2e-4a18-9c31-bff5c17a5c86
+        - 003d5f76-dc2e-4a18-9c31-bff5c17a5c99
         negate: 0
 --- !u!114 &2625766911211795729
 MonoBehaviour:
@@ -126,8 +126,8 @@ MonoBehaviour:
   - c21c9360-412e-4870-853a-62a357906136
   rect:
     serializedVersion: 2
-    x: 248
-    y: 294
+    x: 264
+    y: 299
     width: 200
     height: 100
   onEnterAction: 
@@ -182,7 +182,7 @@ MonoBehaviour:
     y: 12
     width: 200
     height: 100
-  onEnterAction: GiveQuest
+  onEnterAction: GiveQuest1
   onExitAction: 
   condition:
     and: []
@@ -233,7 +233,7 @@ MonoBehaviour:
     y: 279
     width: 200
     height: 100
-  onEnterAction: GiveQuest
+  onEnterAction: GiveQuest2
   onExitAction: 
   condition:
     and: []
@@ -289,9 +289,4 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   condition:
-    and:
-    - or:
-      - predicate: HasInventoryItem
-        parameters:
-        - 
-        negate: 0
+    and: []

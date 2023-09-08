@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c284003f66585549a7cb17fb8bea01e, type: 3}
   m_Name: BowHomingForEnemy2
   m_EditorClassIdentifier: 
+  itemID: 186d1692-4c20-4b7b-a830-ca89d3fcf7e8
+  displayName: Bow
+  description: 
+  icon: {fileID: 0}
+  pickup: {fileID: 0}
+  stackable: 0
+  allowedEquipLocation: 5
   equippedPrefab: {fileID: 895714765841250462, guid: dc4eb8ffb5f79ee4d97c935bec905d2e, type: 3}
   animatorOverride: {fileID: 22100000, guid: ec073a11587efa5468ffa8485685db22, type: 2}
   weaponRange: 20

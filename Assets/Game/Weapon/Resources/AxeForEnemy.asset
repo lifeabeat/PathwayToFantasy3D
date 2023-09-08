@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c284003f66585549a7cb17fb8bea01e, type: 3}
   m_Name: AxeForEnemy
   m_EditorClassIdentifier: 
+  itemID: b594ccdc-f1b1-49fa-9111-979b0f7dfa1d
+  displayName: Axe
+  description: 
+  icon: {fileID: 0}
+  pickup: {fileID: 0}
+  stackable: 0
+  allowedEquipLocation: 5
   equippedPrefab: {fileID: -6187157595905789497, guid: 5063955ccf932c846a4a0f17e5e112de, type: 3}
   animatorOverride: {fileID: 22100000, guid: 336720162dd45b8449fa68403e01206f, type: 2}
   weaponRange: 2

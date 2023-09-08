@@ -23,4 +23,6 @@ MonoBehaviour:
     description: Kill 4th Goblin
   - reference: 5
     description: Kill 5th Goblin
-  rewards: []
+  rewards:
+  - number: 2
+    item: {fileID: 11400000, guid: 1725a0a844bcab849bfcc7bff2b68070, type: 2}

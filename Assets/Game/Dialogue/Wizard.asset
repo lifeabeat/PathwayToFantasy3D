@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5985365020748304326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 75e31c9f-177b-4bca-9883-fb579117f730
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: That's seem easy.
+  anwser:
+  - e0f49a33-62e6-4394-b06a-328eea4ac8a6
+  rect:
+    serializedVersion: 2
+    x: 291
+    y: 205
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-4611638944669735718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: c6d96100-d717-4af3-b27b-b3bf194da56a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I'd heard about you, you must be the reason why I'm here.
+  anwser:
+  - 31a641eb-a627-4c77-abb5-b0205cee3643
+  rect:
+    serializedVersion: 2
+    x: 272
+    y: 82
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-3617692839554196825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 2d66e73c-db11-4323-910a-fafafc849662
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Finally, I'd waited for you for so long.
+  anwser:
+  - c6d96100-d717-4af3-b27b-b3bf194da56a
+  rect:
+    serializedVersion: 2
+    x: 22
+    y: 81
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-823493567887344864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: e0f49a33-62e6-4394-b06a-328eea4ac8a6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I mean US.
+  anwser: []
+  rect:
+    serializedVersion: 2
+    x: 25
+    y: 326
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: Attack
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8700d6cacb51a334aae8678c9097e917, type: 3}
+  m_Name: Wizard
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -3617692839554196825}
+  - {fileID: -4611638944669735718}
+  - {fileID: 7923051425044930066}
+  - {fileID: -5985365020748304326}
+  - {fileID: -823493567887344864}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &7923051425044930066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 31a641eb-a627-4c77-abb5-b0205cee3643
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Defeated me and you can go back to where you from.
+  anwser:
+  - 75e31c9f-177b-4bca-9883-fb579117f730
+  rect:
+    serializedVersion: 2
+    x: 18
+    y: 213
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []

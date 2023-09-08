@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c284003f66585549a7cb17fb8bea01e, type: 3}
   m_Name: Unarmed
   m_EditorClassIdentifier: 
+  itemID: fb29efd6-3221-40b1-a7c6-1ec26ed7a697
+  displayName: Fist
+  description: Barefist
+  icon: {fileID: 0}
+  pickup: {fileID: 0}
+  stackable: 0
+  allowedEquipLocation: 5
   equippedPrefab: {fileID: -161064842945604218, guid: 2b20091eac01f1c4daf6b8b616fbc0bb, type: 3}
   animatorOverride: {fileID: 0}
   weaponRange: 1

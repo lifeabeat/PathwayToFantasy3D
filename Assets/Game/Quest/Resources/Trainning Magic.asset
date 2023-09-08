@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9880dac5e987111469ac47a1796e4715, type: 3}
+  m_Name: Trainning Magic
+  m_EditorClassIdentifier: 
+  objectives:
+  - reference: a
+    description: Kill 1/2 Archer Sekeleton
+  - reference: b
+    description: Kill 2/2 Archer Sekeleton
+  - reference: c
+    description: Kill 1/3 Axe Sekeleton
+  - reference: d
+    description: Kill 2/3 Axe Sekeleton
+  - reference: e
+    description: Kill 3/3 Axe Sekeleton
+  rewards:
+  - number: 1
+    item: {fileID: 11400000, guid: c3ad7d6f91d0bc1498f8dbbc6dce16d9, type: 2}

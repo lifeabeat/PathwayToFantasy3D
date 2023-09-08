@@ -7,14 +7,18 @@ using RPG.Combat;
 using RPG.Attributes;
 using UnityEngine.EventSystems;
 using UnityEngine.AI;
+using GameDev.Inventories;
 
 namespace RPG.Control
 {
     public class PlayerController : MonoBehaviour
     {
         Health health;
+        ActionStore actionStore;
 
-         bool isDraggingUI = false;
+        bool isDraggingUI = false;
+
+        [SerializeField] int numberOfQuickslot = 3;
 
         [System.Serializable]
         struct CursorMapping
@@ -32,10 +36,8 @@ namespace RPG.Control
         private void Awake()
         {
             health = GetComponent<Health>();
-            
-        }
-        private void LateUpdate() {
-            
+            actionStore = GetComponent<ActionStore>();
+
         }
         private void Update()
         {
@@ -46,6 +48,7 @@ namespace RPG.Control
                 SetCursor(CursorType.None);
                 return;
             }
+            UseItem();
             if (InteractWithComponent()) return;
             // if (InteractWithCombat()) return;
             if (InteractWithMovement()) return;
@@ -165,6 +168,17 @@ namespace RPG.Control
                 return true;
             }
             return false;
+        }
+
+        private void UseItem()
+        {
+            for (int i = 0; i < numberOfQuickslot; i++)
+            {
+                if (Input.GetKeyDown(KeyCode.Alpha1 + i))
+                {
+                    actionStore.Use(i, gameObject);
+                }
+            }
         }
 
         // Raycast to find Navmesh to prevent Player move to NoWalkingZone

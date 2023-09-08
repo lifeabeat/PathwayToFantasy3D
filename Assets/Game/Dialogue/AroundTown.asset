@@ -55,9 +55,8 @@ MonoBehaviour:
     - or:
       - predicate: HasQuest
         parameters:
-        - Son's Memorial
+        - SonMemorial
         negate: 0
-    - or: []
 --- !u!114 &-6949495902153476662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,8 +178,8 @@ MonoBehaviour:
   anwser: []
   rect:
     serializedVersion: 2
-    x: 2121
-    y: 442
+    x: 1937
+    y: 447
     width: 200
     height: 100
   onEnterAction: 
@@ -204,8 +203,8 @@ MonoBehaviour:
   anwser: []
   rect:
     serializedVersion: 2
-    x: 1009
-    y: 390
+    x: 902
+    y: 395
     width: 200
     height: 100
   onEnterAction: 
@@ -231,12 +230,12 @@ MonoBehaviour:
   - 808ae328-eb3f-482c-a572-fb1e08d896e1
   rect:
     serializedVersion: 2
-    x: 1547
+    x: 1548
     y: 268
     width: 200
     height: 100
   onEnterAction: 
-  onExitAction: GiveQuest2
+  onExitAction: 
   condition:
     and: []
 --- !u!114 &-2037531293909265026
@@ -435,7 +434,7 @@ MonoBehaviour:
     width: 200
     height: 100
   onEnterAction: 
-  onExitAction: 
+  onExitAction: GiveQuest2
   condition:
     and: []
 --- !u!114 &2085842718528302196
@@ -456,8 +455,8 @@ MonoBehaviour:
   - 0d2d6dd9-fc7d-47af-8101-714c3401178c
   rect:
     serializedVersion: 2
-    x: 238
-    y: 292
+    x: 273
+    y: 245
     width: 200
     height: 100
   onEnterAction: 
@@ -468,11 +467,6 @@ MonoBehaviour:
       - predicate: HasQuest
         parameters:
         - The Outcast
-        negate: 0
-    - or:
-      - predicate: HasQuest
-        parameters:
-        - Payback the Goblin
         negate: 0
 --- !u!114 &2185940064785504890
 MonoBehaviour:
@@ -599,8 +593,8 @@ MonoBehaviour:
   - e6fb7e4b-8301-421a-9a86-d292a697d764
   rect:
     serializedVersion: 2
-    x: 1832
-    y: 439
+    x: 1676
+    y: 429
     width: 200
     height: 100
   onEnterAction: 
@@ -678,8 +672,8 @@ MonoBehaviour:
   - 22dad649-6011-4bb6-8317-ece84fbf894f
   rect:
     serializedVersion: 2
-    x: 1574
-    y: 452
+    x: 1461
+    y: 432
     width: 200
     height: 100
   onEnterAction: 
@@ -704,8 +698,8 @@ MonoBehaviour:
   - 68c3ff5c-2a03-49aa-994f-c09c04f7b406
   rect:
     serializedVersion: 2
-    x: 1354
-    y: 432
+    x: 1313
+    y: 428
     width: 200
     height: 100
   onEnterAction: 
@@ -794,7 +788,7 @@ MonoBehaviour:
     - or:
       - predicate: HasInventoryItem
         parameters:
-        - 79577c57-b961-40f8-aea6-c500411df0f8
+        - 6c7f50d6-1fac-4b23-b578-5f5d8b104679
         negate: 0
 --- !u!114 &8718034762638601063
 MonoBehaviour:

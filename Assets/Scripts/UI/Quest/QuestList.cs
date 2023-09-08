@@ -103,6 +103,7 @@ namespace  RPG.Quests
             {
                 case "HasQuest":
                 return HasQuest(Quest.GetByName(parameters[0]));
+                
                 case "CompletedQuest":
                 return GetQuestStatus(Quest.GetByName(parameters[0])).IsComplete();
             }

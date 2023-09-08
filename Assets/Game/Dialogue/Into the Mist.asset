@@ -19,11 +19,96 @@ MonoBehaviour:
   - 8bf3723e-e2d7-4bc8-8c1f-4d53659bc772
   rect:
     serializedVersion: 2
-    x: 94
-    y: 137
+    x: 12
+    y: 169
     width: 200
     height: 100
   onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-7034615213988822305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: a7b12e2a-323b-4be8-8ebf-6b7b1eff67b8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I want to get out of here too, but how can I defeat him ? Can you give me
+    any advices ?
+  anwser:
+  - edc7fe8f-1ce8-4f33-acda-ddcecf74f17f
+  rect:
+    serializedVersion: 2
+    x: 341
+    y: 486
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Kill the Wizard
+        negate: 0
+--- !u!114 &-6402075442109030942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 0036092e-c26e-4af8-90df-8ee5c5429b65
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Get out of here ? So you want to get out of here too?
+  anwser:
+  - 6c45cc70-f5a4-4f8e-a9c4-546400d960c9
+  rect:
+    serializedVersion: 2
+    x: 636
+    y: 313
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-5612768188607375951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 6c45cc70-f5a4-4f8e-a9c4-546400d960c9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Yes, the rumor said that if you can defeat the Wizard and his minions, a
+    gate will open and you can free from this realm.
+  anwser:
+  - a7b12e2a-323b-4be8-8ebf-6b7b1eff67b8
+  rect:
+    serializedVersion: 2
+    x: 71
+    y: 434
+    width: 200
+    height: 100
+  onEnterAction: GiveQuest1
   onExitAction: 
   condition:
     and: []
@@ -43,6 +128,13 @@ MonoBehaviour:
   - {fileID: -7393422061577567492}
   - {fileID: 1708212784503843245}
   - {fileID: 7691973079925942946}
+  - {fileID: 2317297788375438517}
+  - {fileID: 2108525118486138399}
+  - {fileID: -6402075442109030942}
+  - {fileID: -5612768188607375951}
+  - {fileID: -7034615213988822305}
+  - {fileID: 3704381797130111721}
+  - {fileID: 2293166990480609759}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &1708212784503843245
 MonoBehaviour:
@@ -62,11 +154,115 @@ MonoBehaviour:
   - 8d5e0e5f-ba68-41d1-8a35-9fc4f4541245
   rect:
     serializedVersion: 2
-    x: 343
-    y: 136
+    x: 250
+    y: 134
     width: 200
     height: 100
   onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &2108525118486138399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 0de42cf5-ad0f-4485-9b9e-da00ce8fc143
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: By the Wizard, deep in this forest. He hold the key to get out of here.
+  anwser:
+  - 0036092e-c26e-4af8-90df-8ee5c5429b65
+  rect:
+    serializedVersion: 2
+    x: 377
+    y: 306
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &2293166990480609759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: f0a7429b-6eb2-4868-8061-57c14a4d368b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: This spell can at least help you to some extend.
+  anwser: []
+  rect:
+    serializedVersion: 2
+    x: 826
+    y: 434
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &2317297788375438517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: 22737b8b-5db0-496e-a77e-68fcb60c02e8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Who kill you ?
+  anwser:
+  - 0de42cf5-ad0f-4485-9b9e-da00ce8fc143
+  rect:
+    serializedVersion: 2
+    x: 127
+    y: 306
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &3704381797130111721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175ce452523f89f4591975a16594c7bb, type: 3}
+  m_Name: edc7fe8f-1ce8-4f33-acda-ddcecf74f17f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Hmp, I wonder if you good enough to learn this spell. Prove me that you strong
+    and I will give you a spell which I once learned.
+  anwser:
+  - f0a7429b-6eb2-4868-8061-57c14a4d368b
+  rect:
+    serializedVersion: 2
+    x: 575
+    y: 434
+    width: 200
+    height: 100
+  onEnterAction: GiveQuest2
   onExitAction: 
   condition:
     and: []
@@ -83,12 +279,13 @@ MonoBehaviour:
   m_Name: 8d5e0e5f-ba68-41d1-8a35-9fc4f4541245
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 
-  anwser: []
+  text: I once a human just like you but after I got defeated and turn into this.
+  anwser:
+  - 22737b8b-5db0-496e-a77e-68fcb60c02e8
   rect:
     serializedVersion: 2
-    x: 594
-    y: 137
+    x: 467
+    y: 130
     width: 200
     height: 100
   onEnterAction: 
