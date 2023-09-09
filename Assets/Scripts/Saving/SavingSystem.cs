@@ -51,12 +51,15 @@ namespace RPG.Saving
         {
             File.Delete(GetPathFromSaveFile(saveFile));
         }
-
-        
-
         public void Load(string saveFile)
         {
             RestoreState(LoadFile(saveFile));
+        }
+
+        public bool SaveFileExist(string saveFile)
+        {
+            string path = GetPathFromSaveFile(saveFile);
+            return File.Exists(path);
         }
 
         // PRIVATE
