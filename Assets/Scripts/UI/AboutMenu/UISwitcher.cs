@@ -11,11 +11,15 @@ namespace RPG.UI
         // Start is called before the first frame update
         void Start()
         {
-            SwtichTo(entryPoint);
+            //SwtichTo(entryPoint);
         }
 
         public void SwtichTo(GameObject toDisplay)
         {
+            if (AudioManagerUpdateVer1.HasInstance)
+            {
+                AudioManagerUpdateVer1.Instance.PlaySE(AUDIO.BGM_MENU_SELECT_00);
+            }
             if (toDisplay.transform.parent != transform) return;
             foreach (Transform child in transform)
             {

@@ -38,10 +38,16 @@ namespace  RPG.Quests
         public void CompleteObjective(Quest quest, string objective)
         {
             QuestStatus status = GetQuestStatus(quest);
+            if (status.IsComplete()) return;
             status.CompleteObjective(objective);
+            
             if (status.IsComplete())
             {
                 GiveReward(quest);
+                if (AudioManagerUpdateVer1.HasInstance)
+                {
+                    AudioManagerUpdateVer1.Instance.PlaySE(AUDIO.BGM_QUESTCOMPLETE);
+                }
             }
             if (onUpdate != null)
             {

@@ -35,6 +35,10 @@ namespace RPG.Control
             GetComponent<NavMeshAgent>().Warp(respawnLocation.position);
             Health health = GetComponent<Health>();
             health.Heal(health.GetMaxHealthPoints());
+            if (AudioManagerUpdateVer1.HasInstance)
+            {
+                AudioManagerUpdateVer1.Instance.PlayBGM(AUDIO.BGM_VILLAGE);
+            }
             yield return  fader.FadeIn(fadeTime);
         }
 

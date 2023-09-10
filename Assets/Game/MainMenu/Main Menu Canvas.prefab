@@ -576,6 +576,7 @@ GameObject:
   - component: {fileID: 9178771176590850764}
   - component: {fileID: 9159458357821044560}
   - component: {fileID: 4638995036370409638}
+  - component: {fileID: 2780040493779461181}
   m_Layer: 5
   m_Name: Main Menu Canvas
   m_TagString: Untagged
@@ -677,6 +678,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &2780040493779461181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884537047834557687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e3de627a970a4d4b8b56fb3ef0989b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistentObjectPrefab: {fileID: 2826952495137927800, guid: 664b5d49a5a76f24eaa91e1c1338f5da, type: 3}
 --- !u!1 &1978021175298881201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1442,7 +1456,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3040533185737884481}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5100498445299719104}
+        m_TargetAssemblyTypeName: RPG.UI.MainMenu, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6715382349511660805
 GameObject:
   m_ObjectHideFlags: 0

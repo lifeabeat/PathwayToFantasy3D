@@ -50,6 +50,10 @@ namespace RPG.Stats
             {
                 currentLevel = newLevel;
                 LevelUpEffect();
+                if (AudioManagerUpdateVer1.HasInstance)
+                {
+                    AudioManagerUpdateVer1.Instance.PlaySE(AUDIO.BGM_LEVELUP);
+                }
                 onLevelUp();
             }
         }

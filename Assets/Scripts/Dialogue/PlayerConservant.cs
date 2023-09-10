@@ -35,7 +35,10 @@ namespace RPG.Dialogue
             isChoosing = false;
             currentConservant = null;
             onConversationUpdated();
-            
+            if (AudioManagerUpdateVer1.HasInstance)
+            {
+                AudioManagerUpdateVer1.Instance.PlaySE(AUDIO.BGM_SFX_UI_CLICK);
+            }
         }
         public bool IsActive()
         {
@@ -84,6 +87,10 @@ namespace RPG.Dialogue
 
         public void Next()
         {
+            if (AudioManagerUpdateVer1.HasInstance)
+            {
+                AudioManagerUpdateVer1.Instance.PlaySE(AUDIO.BGM_SFX_UI_CLICK);
+            }
             int numPlayerResponses = FilterOnCondition(currentDialogue.GetPlayerChildren(currentNode)).Count();
             
             if (numPlayerResponses > 0)

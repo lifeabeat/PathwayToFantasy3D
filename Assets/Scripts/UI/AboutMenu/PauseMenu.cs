@@ -29,6 +29,10 @@ namespace RPG.UI
 
         public void SaveAndQuit ()
         {
+            if (AudioManagerUpdateVer1.HasInstance)
+            {
+                AudioManagerUpdateVer1.Instance.PlaySE(AUDIO.BGM_MENU_SELECT_00);
+            }
             SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
             savingWrapper.Save();   
             savingWrapper.LoadMenu();

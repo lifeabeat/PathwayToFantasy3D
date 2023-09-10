@@ -322,7 +322,7 @@ MonoBehaviour:
     y: 152
     width: 200
     height: 100
-  onEnterAction: AroundTown1
+  onEnterAction: 
   onExitAction: 
   condition:
     and: []
@@ -347,7 +347,7 @@ MonoBehaviour:
     y: 86
     width: 200
     height: 100
-  onEnterAction: 
+  onEnterAction: AroundTown1
   onExitAction: GiveQuest
   condition:
     and: []

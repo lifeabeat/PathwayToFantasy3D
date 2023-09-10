@@ -20,6 +20,10 @@ namespace GameDev.UI
         {
             if (Input.GetKeyDown(toggleKey))
             {
+                if (AudioManagerUpdateVer1.HasInstance)
+                {
+                    AudioManagerUpdateVer1.Instance.PlaySE(AUDIO.BGM_INVENTORY_OPEN_00);
+                }
                 Toggle();
             }
         }

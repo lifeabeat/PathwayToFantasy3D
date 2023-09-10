@@ -14,6 +14,10 @@ public class HealthPotion : ActionItem
         Health health = user.GetComponent<Health>();
         if (!health) return;
         health.Heal(healAmount);
-        
+        if (AudioManagerUpdateVer1.HasInstance)
+        {
+            AudioManagerUpdateVer1.Instance.PlaySE(AUDIO.BGM_HEAL_SMALL_03);
+        }
+
     }
 }

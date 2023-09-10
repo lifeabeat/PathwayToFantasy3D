@@ -24,11 +24,24 @@ namespace RPG.UI
 
         public void ContinueGame()
         {
+            if (AudioManagerUpdateVer1.HasInstance)
+            {
+                AudioManagerUpdateVer1.Instance.PlaySE(AUDIO.BGM_MENU_SELECT_00);
+            }
             savingWrapper.value.ContinueGame();
+
         }
         public void NewGame()
         {
+            if (AudioManagerUpdateVer1.HasInstance)
+            {
+                AudioManagerUpdateVer1.Instance.PlaySE(AUDIO.BGM_MENU_SELECT_00);
+            }
             savingWrapper.value.NewGame(newGameNameField.text);
+            if (AudioManagerUpdateVer1.HasInstance)
+            {
+                AudioManagerUpdateVer1.Instance.PlayBGM(AUDIO.BGM_VILLAGE);
+            }
         }
 
         public void QuitGame()

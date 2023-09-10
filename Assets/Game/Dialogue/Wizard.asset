@@ -99,7 +99,7 @@ MonoBehaviour:
     y: 326
     width: 200
     height: 100
-  onEnterAction: 
+  onEnterAction: PlayMusic
   onExitAction: Attack
   condition:
     and: []

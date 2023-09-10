@@ -238,7 +238,7 @@ MonoBehaviour:
     y: 21
     width: 200
     height: 100
-  onEnterAction: AroundTown2
+  onEnterAction: 
   onExitAction: 
   condition:
     and: []
@@ -431,7 +431,7 @@ MonoBehaviour:
     y: 259
     width: 200
     height: 100
-  onEnterAction: 
+  onEnterAction: AroundTown2
   onExitAction: 
   condition:
     and: []
