@@ -290,6 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1b5be031a42f0144883d6ef5c91e13e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numberOfQuickslot: 3
   cursorRadius: 1
   cursorMappings:
   - type: 0
