@@ -1484,7 +1484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 674726845844392585, guid: 268a065c845b67d408e4dd2aa674d318, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -522.4499
+      value: -522.44995
       objectReference: {fileID: 0}
     - target: {fileID: 675264582714906667, guid: 268a065c845b67d408e4dd2aa674d318, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3259,8 +3259,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 17.752098, y: 1.6247964, z: 2.0404816}
-  m_Center: {x: -0.42947197, y: 0.3123982, z: 0.52024055}
+  m_Size: {x: 49.428356, y: 1.6247964, z: 41.364708}
+  m_Center: {x: -7.200921, y: 0.31239974, z: 8.396622}
 --- !u!4 &687626317
 Transform:
   m_ObjectHideFlags: 0

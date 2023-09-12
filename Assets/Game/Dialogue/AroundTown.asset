@@ -55,7 +55,7 @@ MonoBehaviour:
     - or:
       - predicate: HasQuest
         parameters:
-        - SonMemorial
+        - Son's Memory
         negate: 0
 --- !u!114 &-6949495902153476662
 MonoBehaviour:
@@ -486,7 +486,7 @@ MonoBehaviour:
   - 6d781987-2df1-45b9-a34e-9c84f9b949c5
   rect:
     serializedVersion: 2
-    x: 658
+    x: 659
     y: 394
     width: 200
     height: 100

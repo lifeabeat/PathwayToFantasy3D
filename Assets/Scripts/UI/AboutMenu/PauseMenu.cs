@@ -34,8 +34,14 @@ namespace RPG.UI
                 AudioManagerUpdateVer1.Instance.PlaySE(AUDIO.BGM_MENU_SELECT_00);
             }
             SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
-            savingWrapper.Save();   
+            savingWrapper.Save();
+            if (AudioManagerUpdateVer1.HasInstance)
+            {
+
+                AudioManagerUpdateVer1.Instance.PlayBGM(AUDIO.BGM_MAINMENU);
+            }
             savingWrapper.LoadMenu();
+            
         }
     }
 }
