@@ -726,7 +726,6 @@ GameObject:
   - component: {fileID: 5470860666297999386}
   - component: {fileID: 7452594051843030462}
   - component: {fileID: 7607456131448876436}
-  - component: {fileID: 1086024487767817676}
   m_Layer: 5
   m_Name: LevelValue
   m_TagString: Untagged
@@ -863,18 +862,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1086024487767817676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3485312229296076682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de7a8f3bb4324f5458eb9805b762aaee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6848141707132922916
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,7 +1278,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 11.881226, y: -5.084198}
+  m_AnchoredPosition: {x: 11.881226, y: -5.0842285}
   m_SizeDelta: {x: 283.4512, y: 179.8097}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &160173040006137317

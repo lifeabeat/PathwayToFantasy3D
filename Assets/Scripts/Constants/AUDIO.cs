@@ -16,4 +16,5 @@
 	 public const string BGM_MENU_SELECT_00 = "Menu_Select_00";
 	 public const string BGM_QUESTCOMPLETE = "QuestComplete";
 	 public const string BGM_SFX_UI_CLICK = "SFX_UI_Click";
+	 public const string BGM_SPELL_00 = "Spell_00";
 }
